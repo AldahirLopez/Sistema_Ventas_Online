@@ -1,0 +1,96 @@
+.content{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conten-info{
+     width: 350px;
+     height: 300px;
+     margin: 10px;
+     border-radius: 4px;
+     box-shadow: 1px 1px 10px #000;
+  }
+
+  .conten-info img{
+    width: 100%;
+    height: 150px;
+  }
+
+  .conten-info h3,p{
+    margin: 15px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    height: 80px;
+    margin: 0 15px 25px 15px;
+    background-color: yellow;
+  }
+
+  .top{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top div{
+    margin: 30px;
+  }
+
+  .contenedor{
+    width: 450px;
+    height: 50px;
+    background: #24303c;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  .botons2{
+    width: 50px;
+    background: #1f53c5;
+    border: none;
+    padding: 6px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  
+  .user{
+    width: 100%;
+    height: 50px;
+    margin: 0 0 25px 0;
+  }
+
+  .user h2{
+    padding-left: 50px;
+  }
+
+  .user h1{
+    text-align: center;
+  }
+
+  .buy-btn{
+    color: #ffffff;
+    background-color: #0071e3;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    padding:0px;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }

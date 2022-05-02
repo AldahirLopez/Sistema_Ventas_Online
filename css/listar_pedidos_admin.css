@@ -1,0 +1,66 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background-color: black;
+}
+
+table
+{
+	margin:0;
+	border-collapse:collapse;
+	border: 1px solid black;
+	background: #ccc;
+	top:50%;
+	left:50%;
+}
+
+td
+{
+	padding:10px 40px;
+	border: 1px solid black;
+	text-align: center;
+	background: #f3f3f3;
+	font-weight: bold;
+}
+
+
+td .estado{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+td .estado a{
+	text-decoration: none;
+	color: white;
+}
+
+.estado:hover {
+	background: rgba(94,125,227, .9);
+}
+th
+{
+	padding:10px;
+	border: 1px solid black;
+	background-color: #ccc;
+	
+}
+
+td .options button i{
+    border-radius: 25px;
+    width: 40px;
+}
+td .options{
+    margin: 5px;
+    display: flex;
+}

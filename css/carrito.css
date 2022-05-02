@@ -1,0 +1,63 @@
+.site-blocks-table{
+    width: 100%;
+	height: 100%;
+}
+body
+{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+table
+{
+	margin:0;
+	border-collapse:collapse;
+	border: 1px solid black;
+	background: #ccc;
+
+}
+
+td
+{
+	padding:10px 40px;
+	border: 1px solid black;
+	text-align: center;
+	background: #f3f3f3;
+	font-weight: bold;
+}
+
+th
+{
+	padding:10px;
+	border: 1px solid black;
+	background-color: #ccc;
+}
+
+td .options button i{
+    border-radius: 25px;
+    width: 40px;
+}
+td .options{
+    margin: 5px;
+    display: flex;
+}
+td .eliminar i {
+	font-size:25px;
+	color: black;
+	
+}
+td .pagar {
+	background-color: greenyellow;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 100px;
+	height: 30px;
+}
+td .pagar i{
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+

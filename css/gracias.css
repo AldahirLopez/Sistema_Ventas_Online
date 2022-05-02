@@ -1,0 +1,30 @@
+.gracias{
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+.gracias span i{
+    font-size: 230px;
+    color: green;
+}
+.gracias button{
+    margin: 10px;
+    padding: 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: blue;
+    width: 190px;
+    height: 50px;
+}
+.gracias button a{
+ font-size: 20px;
+ text-decoration: none;
+ color: black;
+}
+
+.gracias .letrero1{
+    font-size: 40px;
+}
+.gracias .letrero2{
+    font-size: 25px;
+}
