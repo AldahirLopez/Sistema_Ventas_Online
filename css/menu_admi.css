@@ -34,10 +34,21 @@
     border-radius: 20px;
   }
   .botonss{
+    padding-right: 25px;
     width: 80px;
     background: #1f53c5;
     border: none;
     padding: 6px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .botons3{
+    margin: -4px 10px 0 0;
+    width: 280px;
+    height: 35px;
+    background: #1f53c5;
     color: white;
     font-size: 16px;
     border-radius: 20px;
@@ -116,15 +127,19 @@
   }
 
   main {
-    max-width: 800px;
+    height: auto;
     width: 90%;
     margin: auto;
-    padding: 40px;
+    padding: 30px;
+    background: #24303c;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
   }
   
   .formulario {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
   
@@ -137,6 +152,12 @@
   
   .formulario__grupo-input {
     position: relative;
+    display: flex;
+  }
+
+  .formulario__grupo-input h3{
+    padding-top: 10px;
+    padding-right: 3px;
   }
   
   .formulario__input {
@@ -252,6 +273,39 @@
   
   .formulario__grupo-incorrecto .formulario__input {
     border: 3px solid #bb2929;
+  }
+
+  .botons{
+    margin: 0 0 10px 10px;
+    width: 65px;
+    height: 30px;
+    background: #1f53c5;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .btn-registro-back{
+    width: 65px;
+    height: 30px;
+    background: #1f53c5;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .btnregistrar{
+    margin: 0 0 10px 10px;
+    width: 85px;
+    height: 40px;
+    background: #1f53c5;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .encabezado{
+    height: 10px;
   }
   
   

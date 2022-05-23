@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://kit.fontawesome.com/cca00cc8a6.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="../../fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../../css/menu_admi.css">
   <title>Formulario Registro</title>
 </head>
 <body>
+<div class="encabezado">
+	
+</div>
+    
 <main>
+<button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
+    <script type="text/javascript">
+      function login(){
+        window.location.href="../menu.php";
+      }
+	</script>
+	<center>
+	<h4>Formulario Registro</h4>
+	</center>
     <form method="post" class="formulario" id="formulario" enctype="multipart/form-data">
-    <h4>Formulario Registro</h4>
     <!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
@@ -33,7 +45,7 @@
 			</div>
 
       <!-- Grupo: Apellidos -->
-			<div class="formulario__grupo" id="grupo__nombre">
+			<div class="formulario__grupo" id="grupo__apellidos">
 				<label for="nombre" class="formulario__label">Apellidos</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="John Doe">
@@ -42,9 +54,29 @@
 				<p class="formulario__input-error">El nombre solo puede contener letras.</p>
 			</div>
 
-       <!-- Grupo: Direccion -->
-			<div class="formulario__grupo" id="grupo__nombre">
-				<label for="nombre" class="formulario__label">Direccion</label>
+       <!-- Grupo: Direccion Calle-->
+			<div class="formulario__grupo" id="grupo__direccion">
+				<label for="direccion" class="formulario__label">Direccion</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="John Doe">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre solo puede contener letras.</p>
+			</div>
+
+		<!-- Grupo: Direccion Colonia-->
+		<div class="formulario__grupo" id="grupo__direccion">
+			<label for="direccion" class="formulario__label">Direccion</label>
+			<div class="formulario__grupo-input">
+				<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="John Doe">
+				<i class="formulario__validacion-estado fas fa-times-circle"></i>
+			</div>
+			<p class="formulario__input-error">El nombre solo puede contener letras.</p>
+		</div>
+
+		<!-- Grupo: Direccion I -->
+		<div class="formulario__grupo" id="grupo__direccion">
+				<label for="direccion" class="formulario__label">Direccion</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="John Doe">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -92,6 +124,20 @@
 				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
 			</div>
 
+			<div class="formulario__grupo">
+			<label for="foto" class="formulario__label">Foto de perfil(Opcional)</label>
+			<input class="formulario__input" type="file" name="ruta_img" require="">
+			</div> 
+
+			<div class="formulario__grupo">
+			<label for="rol" class="formulario__label">Selecione el Rol</label>
+			<select class="formulario__input" id="rolSelect" name="rolSelect">
+			<option value="0">Seleccionar...</option>
+			<option value="1">Usuario</option>
+			<option value="2">Administrador</option>
+			</select>
+			</div> 
+    		
 			<!-- Grupo: Terminos y Condiciones -->
 			<div class="formulario__grupo" id="grupo__terminos">
 				<label class="formulario__label">
@@ -99,25 +145,39 @@
 					Acepto los Terminos y Condiciones
 				</label>
 			</div>
-
+			
 			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>	
 			</div>
+			<!-- Grupo: Registrar -->
+			<div class="formulario__grupo" id="grupo__terminos">
+			
+			</div>
+			<!-- Grupo: Registrar -->
+			<div class="formulario__grupo" id="grupo__terminos">
 
+			</div>
+			<!-- Grupo: Registrar -->
+			<div class="formulario__grupo" id="grupo__terminos">
+			<center>
+			<input class="btnregistrar" type="submit" name="Registrar" value="Registrar">
+			</center>
+			</div>
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
-      <input class="botons" type="submit" name="Registrar" value="Registrar"> 
-      
- </form>
- <?php
-    include("../registros/usuario.php");
-   ?>  
+			
+		</form>
+		
+		<?php
+			include("../registros/usuario.php");
+		?>  
 </main>
+<footer>
+	<div class="encabezado"></div>
+</footer>
 
-   <script src="../../js/validad.js"></script>
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="../../js/validad.js"></script>
 </body>
 
 </html>

@@ -8,13 +8,10 @@ body
 
 table
 {
-	margin:0;
+	margin:auto;
 	border-collapse:collapse;
 	border: 1px solid black;
 	background: #2CA0DF;
-	top:50%;
-	left:50%;
-	transform: translate(40%,5%);
 }
 
 td

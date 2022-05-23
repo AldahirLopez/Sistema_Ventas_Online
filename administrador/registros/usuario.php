@@ -14,7 +14,7 @@ if (isset($_POST['Registrar'])) {
         $rol = (int)trim($_POST['rolSelect']);
         $contra = trim($_POST['password']);
 		$img = addslashes(file_get_contents($_FILES['ruta_img']['tmp_name']));
-	    $consulta = "INSERT INTO usuario(username, nombre, apellidos, telefono, correo_e, direccion, rol, fecha, password, foto) VALUES ('$user','$nom','$ape','$tel','$email','$direc','$rol','$fechareg','$contra','$img')";
+	    $consulta = "INSERT INTO usuario(username, nombre, apellidos, telefono, correo_e, direccion, rol, fecha, password, foto) VALUES ('$user','$nom','$ape','$tel','$email','$direc','$rol','$fecha','$contra','$img')";
 	    $resultado = mysqli_query($conexion,$consulta);
 	    if ($resultado) {
 	    	?> 

@@ -13,7 +13,7 @@ if(isset($_SESSION['user'])){
 			<!DOCTYPE html>
 			<html>	
 			<head>
-			<script src="https://kit.fontawesome.com/cca00cc8a6.js" crossorigin="anonymous"></script>
+			<link href="../fontawesome/css/all.css" rel="stylesheet">
 				<link rel="stylesheet" type="text/css" href="../css/menu_admi2.css">		
 				<title>Administracion | Administrador </title>  
 				</head>
@@ -29,7 +29,7 @@ if(isset($_SESSION['user'])){
 						</div>
 					</header>
 				<div class="user">
-					<h2>Hola Administrador -</h2>
+					<h2>Hola Administrador - <?php echo $user->getNombre();?></h2>
 					<h1>Menu</h1>
 				</div>
 				<div class="content">
@@ -51,7 +51,7 @@ if(isset($_SESSION['user'])){
 						<button class="buy-btn" onclick="proveedores()">Ir a proveedores</button>
 						<script type="text/javascript">
 						function proveedores(){
-							window.location.href="vistas/vista_proveedor.php";
+							window.location.href="vistas/listar_proveedor.php";
 						}
 						</script>
 					</div>

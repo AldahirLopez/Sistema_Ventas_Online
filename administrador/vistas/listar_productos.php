@@ -3,20 +3,28 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/listar_productos.css">
 <link rel="stylesheet" href="../../css/menu_admi.css">
-<script src="https://kit.fontawesome.com/cca00cc8a6.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../../css/admin-header.css">
+<link href="../../fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <body>
 <?php include('../../registros/conexion.php');?>
-<div class="contenedor">
-    <button class="botons2" onclick="login()"><i class="fas fa-arrow-left"></i></button>
+<div class="menu">
+<button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
     <script type="text/javascript">
       function login(){
         window.location.href="../menu.php";
       }
     </script>
-    </div>
+<button class="botons3" onclick="producto()">Agregar Nuevo Producto</button>
+    <script type="text/javascript">
+      function producto(){
+        window.location.href="vista_producto.php";
+      }
+    </script>
+</div>
 <table>
+
 
 <tr><th colspan="6"><h1>Listado de productos</h1></th></tr>
 <tr>

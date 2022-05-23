@@ -8,7 +8,7 @@ session_start();
     <title>RR Desing</title>
     <!-- mio -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/cca00cc8a6.js" crossorigin="anonymous"></script>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css -->
     <link rel="stylesheet" href="css/header.css">   

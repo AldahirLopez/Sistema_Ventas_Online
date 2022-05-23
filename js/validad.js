@@ -6,7 +6,12 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+	cantidad: /^\d{1,14}$/, // 0 a 10 numeros.
+	precio: /^[0-9\.]{1,8}$/, // Numeros del 0 al 9 y puntos
+	descripcion: /^[a-zA-Z0-9À-ÿ\s\#\-]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	categoria: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	sub_cat: /^[a-zA-ZÀ-ÿ\s]{1,40}$/ // Letras y espacios, pueden llevar acentos.
 }
 
 const campos = {
@@ -14,16 +19,42 @@ const campos = {
 	nombre: false,
 	password: false,
 	correo: false,
-	telefono: false
+	telefono: false,
+	cantidad: false,
+	precio: false,
+	descripcion: false,
+	categoria: false,
+	sub_cat: false
 }
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
+		case "cantidad":
+			validarCampo(expresiones.cantidad, e.target, 'cantidad');
+		break;
+		case "precio":
+			validarCampo(expresiones.precio, e.target, 'precio');
+		break;
+		case "descripcion":
+			validarCampo(expresiones.descripcion, e.target, 'descripcion');
+		break;
 		case "usuario":
 			validarCampo(expresiones.usuario, e.target, 'usuario');
 		break;
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
+		break;
+		case "categoria":
+			validarCampo(expresiones.categoria, e.target, 'categoria');
+		break;
+		case "sub_cat":
+			validarCampo(expresiones.sub_cat, e.target, 'sub_cat');
+		break;
+		case "apellidos":
+			validarCampo(expresiones.nombre, e.target, 'apellidos');
+		break;
+		case "direccion":
+			validarCampo(expresiones.usuario, e.target, 'direccion');
 		break;
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
@@ -38,6 +69,7 @@ const validarFormulario = (e) => {
 		case "telefono":
 			validarCampo(expresiones.telefono, e.target, 'telefono');
 		break;
+		
 	}
 }
 
