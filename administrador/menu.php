@@ -21,13 +21,23 @@ if(isset($_SESSION['user'])){
 					<header>
 						<div class="top">
 						<div>
-						<a href="../index.php">Menu principal</a>
+						<button class="botons3" onclick="producto()">Menu principal</button>
+						<script type="text/javascript">
+						function producto(){
+							window.location.href="../index.php";
+						}
+						</script>
 						</div>
-						<div>
+						<div class="user">
 						<h2>Hola Administrador - <?php echo $user->getNombre();?></h2>
 						</div>
 						<div>
-						<a href="../perfil/user_perfil.php">Salir</a>
+						<button class="botons3" onclick="producto()">Menu principal</button>
+						<script type="text/javascript">
+						function producto(){
+							window.location.href="../servicios/login/validad.php";
+						}
+						</script>
 						</div>
 						</div>
 					</header>
@@ -37,8 +47,10 @@ if(isset($_SESSION['user'])){
 				<div class="content">
 					<div class="conten-info">
 						<img src="../img/admin/productos.jpg">
+						<center>
 						<h3>Productos</h3>
-						<p>En esta seccion puedes administrar los productos agregar, eliminar y modificar</p>
+						</center>
+						<p>En este modulo puedes administrar los productos agregar, eliminar y modificar</p>
 						<button class="buy-btn" onclick="productos()">Ir a productos</button>
 						<script type="text/javascript">
 						function productos(){
@@ -48,8 +60,10 @@ if(isset($_SESSION['user'])){
 					</div>
 					<div class="conten-info">
 					<img src="../img/admin/proveedores.jpg">
+						<center>
 						<h3>Proveedores</h3>
-						<p>En esta seccion puedes administrar los proveedores agregar, eliminar y modificar</p>
+						</center>
+						<p>En este modulo puedes administrar los proveedores agregar, eliminar y modificar</p>
 						<button class="buy-btn" onclick="proveedores()">Ir a proveedores</button>
 						<script type="text/javascript">
 						function proveedores(){
@@ -59,8 +73,10 @@ if(isset($_SESSION['user'])){
 					</div>
 					<div class="conten-info">
 					<img src="../img/admin/reportes.png">
+						<center>
 						<h3>Reporte de ventas</h3>
-						<p>En esta seccion puedes visualizar los reportes de ventas</p>
+						</center>
+						<p>En este modulo puedes visualizar los reportes de ventas</p>
 						<button class="buy-btn" onclick="reventas()">Ir a reporte de ventas</button>
 						<script type="text/javascript">
 						function reventas(){
@@ -71,8 +87,10 @@ if(isset($_SESSION['user'])){
 					</div>
 					<div class="conten-info">
 					<img src="../img/admin/ventas.jpg">
+						<center>
 						<h3>Ventas</h3>
-						<p>En esta seccion puedes administrar las ventas agregar, eliminar y modificar</p>
+						</center>
+						<p>En este modulo puedes administrar las ventas agregar, eliminar y modificar</p>
 						<button class="buy-btn" onclick="ventas()">Ir a ventas</button>
 						<script type="text/javascript">
 						function ventas(){
@@ -82,8 +100,10 @@ if(isset($_SESSION['user'])){
 					</div>
 					<div class="conten-info">
 					<img src="../img/admin/usuarios.png">
+						<center>
 						<h3>Usuarios</h3>
-						<p>En esta seccion puedes administrar los usuarios agregar, eliminar y modificar</p>
+						</center>
+						<p>En este modulo puedes administrar los usuarios agregar, eliminar y modificar</p>
 						<button class="buy-btn" onclick="usuario()">Ir a usuarios</button>
 						<script type="text/javascript">
 						function usuario(){

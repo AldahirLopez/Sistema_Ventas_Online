@@ -19,7 +19,7 @@ html {
 
 body{
     background-color: black;
-    background-image: url(../img/fondos/perfil-fondo.jpg);
+    /*background-image: url(../img/fondos/perfil-fondo.jpg);*/
     background-size: 1980px;
     background-repeat: no-repeat;
     background-position: 0px -850px;

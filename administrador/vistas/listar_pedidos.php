@@ -18,19 +18,20 @@
         <!-- Css -->
         <link rel="stylesheet" href="../../css/listar_pedidos_admin.css"> 
         <link rel="stylesheet" href="../../css/popuppedidos.css">  
+        <link rel="stylesheet" type="text/css" href="../../css/admin-header.css">
       </head>
       <body>
+      <div class="menu">
+      <button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
+          <script type="text/javascript">
+            function login(){
+              window.location.href="../menu.php";
+            }
+          </script>
+      </div>
      <!--Pedidos-->
      
      <table>
-     <div class="contenedor">
-    <button class="botons2" onclick="login()"><i class="fas fa-arrow-left"></i></button>
-    <script type="text/javascript">
-      function login(){
-        window.location.href="../menu.php";
-      }
-    </script>
-    </div>
       <tr><th colspan="6"><h1>Lista de pedidos</h1></th></tr>
       <tr>
 
