@@ -24,12 +24,14 @@ if(isset($_SESSION['user'])){
 						<a href="../index.php">Menu principal</a>
 						</div>
 						<div>
+						<h2>Hola Administrador - <?php echo $user->getNombre();?></h2>
+						</div>
+						<div>
 						<a href="../perfil/user_perfil.php">Salir</a>
 						</div>
 						</div>
 					</header>
 				<div class="user">
-					<h2>Hola Administrador - <?php echo $user->getNombre();?></h2>
 					<h1>Menu</h1>
 				</div>
 				<div class="content">
