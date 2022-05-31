@@ -62,13 +62,12 @@ if(isset($_GET['id'])){
           </p>
             <!--btn---->           
         </div> 
-        <center>
+
         <button class="buy-btn" onclick="carrito()"><i class="fas fa-shopping-cart"></i></button>
             <script type="text/javascript">
               function carrito(){
                 var combo = document.getElementById("select");
-                var selected = combo.options[combo.selectedIndex].text;
-                window.location.href="anadir_carrito.php?id=<?php echo $fila[0];?>"+"&id_talla="+selected;
+                window.location.href="anadir_carrito.php?id=<?php echo $fila[0];?>";
               }
         </script>
         </center>

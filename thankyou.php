@@ -10,12 +10,8 @@
             if(isset($_GET['id_direc'])){
               $arreglo = $_SESSION['carrito'];
               (int)$total = 0;
-              (int)$envio = 125;
               for($i=0;$i<count($arreglo);$i++)
               {
-                if( $arreglo[$i]['Categoria'] == 't-shirt'){
-                  $envio = 0;
-                }
                 $total = $total + ($arreglo[$i]['Precio'] * $arreglo[$i]['Cantidad'] );
               }       
               $userid = $user->getUseid();
@@ -29,18 +25,17 @@
               $id_venta = $conexion -> insert_id;
               for($i=0;$i<count($arreglo);$i++)
               {
-                  $conexion -> query("insert into venta_productos(id_venta,id_producto,cantidad,talla,precio,sub_total) 
+                  $conexion -> query("insert into venta_productos(id_venta,id_producto,cantidad,precio,sub_total) 
                   values(
                   $id_venta,
                   ".$arreglo[$i]['Id'].",
                   ".$arreglo[$i]['Cantidad'].",
                   ".$arreglo[$i]['Precio'].",
-                  ".$arreglo[$i]['Talla'].",
                   ".$arreglo[$i]['Precio']*$arreglo[$i]['Cantidad']."
                   )")or die($conexion->error);;
                   $conexion ->query("update items set cantidad = cantidad-".$arreglo[$i]['Cantidad']." where id=".$arreglo[$i]['Id'])or die($conexion -> error);
               }
-              $final=$total+$envio;
+              $final=$total;
               $fecha = date("Y-m-d");
               $conexion -> query("insert into pago(id_venta,id_direccion,fecha,total)
               values('$id_venta','".$_GET['id_direc']."','$fecha','$final')")or die($conexion -> error);

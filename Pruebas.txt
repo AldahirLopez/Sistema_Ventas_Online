@@ -1,0 +1,5 @@
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer TEST-6644324466997837-053114-1045ac3cc0e4a3d992db254c10d84f1b-333169729" "https://api.mercadopago.com/users/test_user" -d "{'site_id':'MLM'}"
+//Cliente
+{"id":1133936196,"nickname":"TEST7OKI3ORY","password":"qatest1395","site_status":"active","email":"test_user_19441664@testuser.com"}
+//Prueba
+{"id":1133931854,"nickname":"TESTVODYOBY1","password":"qatest6891","site_status":"active","email":"test_user_82264711@testuser.com"}

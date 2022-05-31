@@ -9,7 +9,6 @@ if (isset($_POST['Registrar'])) {
         $estado = (int)trim($_POST['estado']);
 	
 		$consulta = $conexion -> query("UPDATE venta SET estado=$estado, guia='$guia', paqueteria='$paq' WHERE id_venta=".$_GET['id']) or die($conexion->error);
-	    $resultado = mysqli_query($conexion,$consulta);
 	}
 }
 

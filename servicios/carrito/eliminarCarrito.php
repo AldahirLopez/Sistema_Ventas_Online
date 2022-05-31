@@ -9,6 +9,7 @@ for($i=0;$i<count($arreglo);$i++){
            'Precio' => $arreglo[$i]['Precio'],
            'Imagen' => $arreglo[$i]['Imagen'],
            'Cantidad' => $arreglo[$i]['Cantidad'],
+           'Descripcion' => $arreglo[$i]['Descripcion'],
            'Talla' => $arreglo[$i]['Talla'],
            'Categoria' => $arreglo[$i]['Categoria']
        );

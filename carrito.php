@@ -123,31 +123,8 @@
               <tr>
                 <td><img width='80' height='80' src="data:jpg;base64,<?php echo base64_encode($arregloCarrito[$i]['Imagen']); ?>"></td>
                 <td><?php echo $arregloCarrito[$i]['Nombre']; ?></td>
-                <td>
-                <?php 
-                  $talla  = $arregloCarrito[$i]['Talla'];
-                      if($talla=='Chica' || $talla=='Mediana' || $talla=='Grande' || $talla=='Extra Grande' || $talla == 'unitalla'){
-                        ?>
-                        <i class="fas fa-tshirt"></i>Talla: <?php echo $arregloCarrito[$i]['Talla']; ?>
-                        <?php
-                      }else{
-                        if($talla=='16oz' || $talla == '24oz'){
-                          ?>
-                          <i class="fas fa-prescription-bottle"></i>
-                          <?php
-                        }else{
-                          
-                        }           
-                      }
-                      ?>
-                </p>
-                </td>
+                <td><?php echo $arregloCarrito[$i]['Talla']; ?></td>
                 
-                
-
-                  
-              
-               
 
                 <td class="cant<?php echo $arregloCarrito[$i]['Id'];?>">$<?php echo $arregloCarrito[$i]['Precio'] * $arregloCarrito[$i]['Cantidad']; ?></td>
                 <td><p>Piezas: <?php echo $arregloCarrito[$i]['Cantidad']; ?></p>

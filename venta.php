@@ -54,13 +54,13 @@
                 // SDK de Mercado Pago
                 require __DIR__ .  '/vendor/autoload.php';
                 // Agrega credenciales
-                MercadoPago\SDK::setAccessToken('APP_USR-46885745385141-092120-c402054c673be215d7821f2cbeb268ff-297221374');
+                MercadoPago\SDK::setAccessToken('TEST-1669952161703630-053115-461a36c7bd6727a66e37e281b22fdb2b-1133936196');
                 // Crea un objeto de preferencia
                 $preference = new MercadoPago\Preference();                          
                 $preference->back_urls = array(
-                    "success" => "https://rrdesing.com/online/thankyou.php?id_direc=$id_direc",
-                    "failure" => "https://rrdesing.com/online/errorpago.php?error=failure",
-                    "pending" => "https://rrdesing.com/online/errorpago.php?error=pending"
+                    "success" => "/localhost/ventas/thankyou.php?id_direc=$id_direc",
+                    "failure" => "errorpago.php?error=failure",
+                    "pending" => "errorpago.php?error=pending"
                 );
                 $preference->auto_return = "approved";
 

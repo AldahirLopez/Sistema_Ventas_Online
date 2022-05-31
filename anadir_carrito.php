@@ -3,12 +3,12 @@
  include 'registros/conexion.php';
  if(isset($_SESSION['carrito'])){
      //si ya esta agregado
-     if(isset($_GET['id']) && isset($_GET['id_talla'])){
+     if(isset($_GET['id'])){
         $arreglo = $_SESSION['carrito'];
         $encontro = false;
         $numero = 0;
         for($i=0;$i<count($arreglo);$i++){
-          if($arreglo[$i]['Id'] == $_GET['id'] && $arreglo[$i]['Talla'] == $_GET['id_talla']){
+          if($arreglo[$i]['Id'] == $_GET['id']){
             $encontro = true;
             $numero=$i;
           }
@@ -27,7 +27,7 @@
           $precio=$fila[3];
           $imagen=$fila[7];
           $desc=$fila[4];
-          $talla=$_GET['id_talla'];
+          $talla=$fila[9];
           $categoria=$fila[6];
           $arregloNuevo = array(
               'Id' => $_GET['id'],
@@ -56,7 +56,7 @@
          $precio=$fila[3];
          $imagen=$fila[7];
          $desc=$fila[4];
-         $talla=$_GET['id_talla'];
+         $talla=$fila[9];
          $categoria=$fila[6];
          $arreglo[] = array(
              'Id' => $_GET['id'],

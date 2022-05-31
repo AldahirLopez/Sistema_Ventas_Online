@@ -290,7 +290,7 @@
                           <img width='80' height='80' src="data:jpg;base64,<?php echo  base64_encode($mostrarproitem['img']); ?>">
                           </td>
                           <td>
-                            <?php echo $mostrarpro['talla'] ?>
+                            <?php echo $mostrarproitem['talla'] ?>
                           </td>
                           <td>
                             <?php echo $mostrarpro['cantidad'] ?>
