@@ -17,9 +17,9 @@
         window.location.href="../menu.php";
       }
     </script>
-<button class="botons3" onclick="producto()">Agregar Nuevo Producto</button>
+<button class="botons3" onclick="usuario()">Agregar nuevo usuario</button>
     <script type="text/javascript">
-      function producto(){
+      function usuario(){
         window.location.href="vista_usuario.php";
       }
     </script>
