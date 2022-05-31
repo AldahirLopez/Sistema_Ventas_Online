@@ -72,7 +72,7 @@
 					<input type="password" class="formulario__input" name="password" id="password"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">La contraseña tiene que ser de 8 a 12 dígitos.</p>
+				<p class="formulario__input-error">La contraseña tiene que ser de 8 a 12 dígitos. Debe contener mayúsculas, minúsculas, números o dígitos especiales (@-#$%*)</p>	
 			</div>
 
 			<!-- Grupo: Contraseña 2 -->
