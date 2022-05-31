@@ -17,7 +17,7 @@
 <button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
     <script type="text/javascript">
       function login(){
-        window.location.href="../menu.php";
+        window.location.href="listar_usuarios.php";
       }
 	</script>
 	<center>
