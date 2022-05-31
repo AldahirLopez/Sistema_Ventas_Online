@@ -27,7 +27,7 @@
 <table>
 
 
-<tr><th colspan="7"><h1>Listado de productos</h1></th></tr>
+<tr><th colspan="7"><h1>Listado de usuarios</h1></th></tr>
 <tr>
 
 <th>User Name</th>
