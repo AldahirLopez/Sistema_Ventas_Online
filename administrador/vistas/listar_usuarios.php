@@ -30,7 +30,7 @@
 <tr><th colspan="7"><h1>Listado de productos</h1></th></tr>
 <tr>
 
-<th>User Name/th>
+<th>User Name</th>
 <th>Nombre</th>
 <th>Apellidos</th>
 <th>Telefono</th>
