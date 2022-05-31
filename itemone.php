@@ -49,52 +49,16 @@ if(isset($_GET['id'])){
         <strong class="nom"><?php echo $fila[1];?></strong>
         </center>
         <div class="detail-descriptiona"><?php echo $fila[4];?></div>
-        <?php 
-            $talla  = $fila[9];
-                if($talla=='disponible'){
-                  ?>
-                  <div class="select">
-                    <select class="select" id="select">
-                      <option class="opntions" value="0">Selecciona una talla:</option>
-                      <option class="opntions" value="1">Chica</option>
-                      <option class="opntions" value="2">Mediana</option>
-                      <option class="opntions" value="3">Grande</option>
-                      <option class="opntions" value="4">Extra Grande</option>
-                    </select>
-                  </div>
-                <?php
-                }else{
-                ?>
-                 <div class="select">
-                    <select class="select" id="select">
-                      <option class="opntions" value="0">Sin tallas:</option>
-                    </select>
-                  </div>
-                
-                <?php    
-                }
-                ?>
+        <div class="detail-descriptiona">Talla:<?php echo $fila[9];?></div>
+        
               
-        <!--buy & price-->
+        <!--buy & price--> 
         
         <div class="buy-pricea">
             <!--price-->
             <p> <i class="fas fa-money-bill"></i>$<?php echo $fila[3];?></p>
             <p> <i class="fas fa-cubes"></i>Stock:<?php echo $fila[2];?> </p>
             <p> 
-            
-            <?php 
-            $talla  = $fila[9];
-                if($talla=='disponible'){
-                  ?>
-                  <i class="fas fa-tshirt"></i>Tallas:Disponibles
-                  <?php
-                }else{
-                  ?>
-                  <i class="fas fa-prescription-bottle"></i>
-                  <?php
-                }
-                 ?>
           </p>
             <!--btn---->           
         </div> 

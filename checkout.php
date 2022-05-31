@@ -71,7 +71,7 @@
                     <br> <span class='thin'><?php echo $arreglo[$i]['Nombre']; ?></span>
                     <br> <?php echo $arreglo[$i]['Descripcion']; ?><br> <span class='thin small'> 
                       Piezas: <?php echo $arreglo[$i]['Cantidad'];?> 
-                     <p>  <?php echo $arreglo[$i]['Talla']; ?></p>
+                     <p><?php echo $arreglo[$i]['Talla']; ?></p>
                       <br><br></span>
                   </td>
                 </tr>

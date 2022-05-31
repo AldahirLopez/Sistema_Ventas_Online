@@ -12,22 +12,22 @@
         <meta charset="utf-8">
         <title>Ver Pedido</title>
         <!-- mio -->
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <link href="../../fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Css -->
-        <link rel="stylesheet" href="../../css/listar_pedidos_admin.css"> 
+        <link rel="stylesheet" href="../../css/listar_productos.css"> 
         <link rel="stylesheet" href="../../css/popuppedidos.css">  
-        <link rel="stylesheet" type="text/css" href="../../css/admin-header.css">
+        <link rel="stylesheet" href="../../css/admin-header.css">
+        <link rel="stylesheet" href="../../css/menu_admi.css"> 
       </head>
       <body>
       <div class="menu">
       <button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
-          <script type="text/javascript">
-            function login(){
-              window.location.href="../menu.php";
-            }
-          </script>
+      <script type="text/javascript">
+        function login(){
+          window.location.href="../menu.php";
+        }
+      </script>
       </div>
      <!--Pedidos-->
      

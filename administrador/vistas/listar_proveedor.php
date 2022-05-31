@@ -35,7 +35,7 @@
 <th>Nombre</th>
 <th>Telefono</th>
 <th>Correo</th>
-<th>Direccion</th>
+<th class="direc">Direccion</th>
 <th>Acción</th>
 
 </tr>
@@ -55,7 +55,7 @@ while($mostrar=mysqli_fetch_array($resultado))
 	<td><?php echo $mostrar['nombre'] ?></td>
 	<td><?php echo $mostrar['telefono'] ?></td>
   <td><?php echo $mostrar['correo_e'] ?></td>
-  <td><?php echo $mostrar['direccion'] ?></td>
+  <td class="direc"><?php echo $mostrar['direccion'] ?></td>
   <td>
     <div class="options">
     <button class="estado"><a href="actualizarProducto.php?id=<?php echo $mostrar['id_proveedor'] ?>"><i class="far fa-edit"></i></button>

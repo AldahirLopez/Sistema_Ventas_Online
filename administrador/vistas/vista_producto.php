@@ -30,7 +30,7 @@
 	<h4>Registro de productos</h4>
 	</center> 
     <form method="post" class="formulario" id="formulario" enctype="multipart/form-data">
-    <!-- Grupo: Nombre -->
+    <!-- Grupo: Nombre Producto -->
 			<div class="formulario__grupo" id="grupo__nombre">
 				<label for="nombre" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
@@ -70,6 +70,16 @@
 				<p class="formulario__input-error">Escriba una descripcion valida</p>
 			</div>
 
+	  <!-- Grupo: Talla -->
+	  <div class="formulario__grupo" id="grupo__talla">
+				<label for="talla" class="formulario__label">Talla</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="talla" id="talla" placeholder="Camisa color blanca, manga corta">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Escriba una talla valida</p>
+			</div>
+
 			<!-- Grupo: Categoria -->
 			<div class="formulario__grupo" id="grupo__categoria">
 				<label for="categoria" class="formulario__label">Categoria</label>
@@ -99,7 +109,7 @@
       <!-- Grupo: Proveedor -->
       <div class="formulario__grupo">
 			<label for="foto" class="formulario__label">Proveedor</label>
-      <select class="formulario__input" id="rolSelect" name="rolSelect">
+      <select class="formulario__input" id="proveedor" name="proveedor">
                     <?php 
                         while($datos = mysqli_fetch_array($resultado))
                         {
@@ -112,10 +122,6 @@
 			</div> 
 			<div class="formulario__mensaje" id="formulario__mensaje">
 				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>	
-			</div>
-			<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
-			
 			</div>
 			<!-- Grupo: Registrar -->
 			<div class="formulario__grupo" id="grupo__terminos">

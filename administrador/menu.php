@@ -14,16 +14,17 @@ if(isset($_SESSION['user'])){
 			<html>	
 			<head>
 			<link href="../fontawesome/css/all.css" rel="stylesheet">
-				<link rel="stylesheet" type="text/css" href="../css/menu_admi2.css">		
+				<link rel="stylesheet" type="text/css" href="../css/menu_admi2.css">	
+				<link rel="stylesheet" type="text/css" href="../css/menu_admi.css">	
 				<title>Administracion | Administrador </title>  
 				</head>
 				<body>
 					<header>
 						<div class="top">
 						<div>
-						<button class="botons3" onclick="producto()">Menu principal</button>
+						<button class="botons" onclick="index()"><i class="fas fa-arrow-left"></i></button>
 						<script type="text/javascript">
-						function producto(){
+						function index(){
 							window.location.href="../index.php";
 						}
 						</script>
@@ -32,9 +33,9 @@ if(isset($_SESSION['user'])){
 						<h2>Hola Administrador - <?php echo $user->getNombre();?></h2>
 						</div>
 						<div>
-						<button class="botons3" onclick="producto()">Menu principal</button>
+						<button class="botons" onclick="perfil()">Perfil</button>
 						<script type="text/javascript">
-						function producto(){
+						function perfil(){
 							window.location.href="../servicios/login/validad.php";
 						}
 						</script>

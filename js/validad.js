@@ -11,7 +11,8 @@ const expresiones = {
 	precio: /^[0-9\.]{1,8}$/, // Numeros del 0 al 9 y puntos
 	descripcion: /^[a-zA-Z0-9À-ÿ\s\#\-]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	categoria: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	sub_cat: /^[a-zA-ZÀ-ÿ\s]{1,40}$/ // Letras y espacios, pueden llevar acentos.
+	sub_cat: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	talla: /^[a-zA-Z0-9\_\-]{4,16}$/ // Letras, numeros, guion y guion_bajo
 }
 
 const campos = {
@@ -24,7 +25,8 @@ const campos = {
 	precio: false,
 	descripcion: false,
 	categoria: false,
-	sub_cat: false
+	sub_cat: false,
+	talla: false
 }
 
 const validarFormulario = (e) => {
@@ -69,7 +71,9 @@ const validarFormulario = (e) => {
 		case "telefono":
 			validarCampo(expresiones.telefono, e.target, 'telefono');
 		break;
-		
+		case "talla":
+			validarCampo(expresiones.talla, e.target, 'talla');
+		break;
 	}
 }
 

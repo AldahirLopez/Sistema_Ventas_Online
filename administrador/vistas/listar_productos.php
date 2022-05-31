@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="../../css/listar_productos.css">
 <link rel="stylesheet" href="../../css/menu_admi.css">
 <link rel="stylesheet" type="text/css" href="../../css/admin-header.css">
+<link rel="stylesheet" href="../../css/popuppedidos.css">  
 <link href="../../fontawesome/css/all.css" rel="stylesheet">
 </head>
 
@@ -54,8 +55,29 @@ while($mostrar=mysqli_fetch_array($resultado))
 	<td><?php echo $mostrar['cantidad'] ?></td>
   <td>
     <div class="options">
-    <button class="estado"><a href="actualizarProducto.php?id=<?php echo $mostrar['id'] ?>"><i class="far fa-edit"></i></button>
-    <button class="estado"><a href="../registros/eliminarProducto.php?id=<?php echo $mostrar['id'] ?>"><i class="fas fa-trash-alt"></i></button>
+    <button class="estado" title="Editar"><a href="actualizarProducto.php?id=<?php echo $mostrar['id'] ?>"><i class="far fa-edit"></i></button>
+    <button class="estado" title="Borrar"><a href="../registros/eliminarProducto.php?id=<?php echo $mostrar['id'] ?>"><i class="fas fa-trash-alt"></i></button>
+    <button id="btn-abrir-popup<?php echo $mostrarpagos['id_pago'];?>" class="btn-abrir-popup">Ver Pagos</button>
+               <div class="overlay" id="overlay<?php echo $mostrarpagos['id_pago'];?>">
+                <div class="popup" id="popup<?php echo $mostrarpagos['id_pago'];?>">
+                <a href="#" id="btn-cerrar-popup<?php echo $mostrarpagos['id_pago'];?>" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <script type="text/javascript">
+                  var btnAbrirPopup<?php echo $mostrarpagos['id_pago'];?> = document.getElementById('btn-abrir-popup<?php echo $mostrarpagos['id_pago'];?>'),
+                    overlay<?php echo $mostrarpagos['id_pago'];?> = document.getElementById('overlay<?php echo $mostrarpagos['id_pago'];?>'),
+                    popup<?php echo $mostrarpagos['id_pago'];?> = document.getElementById('popup<?php echo $mostrarpagos['id_pago'];?>'),
+                    btnCerrarPopup<?php echo $mostrarpagos['id_pago'];?> = document.getElementById('btn-cerrar-popup<?php echo $mostrarpagos['id_pago'];?>');
+
+                  btnAbrirPopup<?php echo $mostrarpagos['id_pago'];?>.addEventListener('click', function(){
+                    overlay<?php echo $mostrarpagos['id_pago'];?>.classList.add('active');
+                    popup<?php echo $mostrarpagos['id_pago'];?>.classList.add('active');
+                  });
+
+                  btnCerrarPopup<?php echo $mostrarpagos['id_pago'];?>.addEventListener('click', function(e){
+                    e.preventDefault();
+                    overlay<?php echo $mostrarpagos['id_pago'];?>.classList.remove('active');
+                    popup<?php echo $mostrarpagos['id_pago'];?>.classList.remove('active');
+                  });
+               </script> 
     </div></td>
 	
 </tr>

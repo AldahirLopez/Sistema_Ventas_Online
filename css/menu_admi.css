@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  header{
-    padding: 100px;
-    height: 100px;
-  }
   body {
     background-image: url(../img/fondos/fondo.jpg);
     background-size: cover cover;
@@ -24,6 +20,18 @@
     color: white;
     box-shadow: 7px 13px 37px #000;
   }
+  
+  .botons{
+    margin: 0 0 10px 10px;
+    width: 65px;
+    height: 30px;
+    background: #1f53c5;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    border-style: none;
+  }
+
   .botons2{
     width: 50px;
     background: #1f53c5;
@@ -52,6 +60,7 @@
     color: white;
     font-size: 16px;
     border-radius: 20px;
+    border-style: none;
   }
   .form-register {
     width: 450px;
@@ -275,15 +284,7 @@
     border: 3px solid #bb2929;
   }
 
-  .botons{
-    margin: 0 0 10px 10px;
-    width: 65px;
-    height: 30px;
-    background: #1f53c5;
-    color: white;
-    font-size: 16px;
-    border-radius: 20px;
-  }
+
 
   .btn-registro-back{
     width: 65px;
