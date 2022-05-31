@@ -102,7 +102,7 @@
 					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El telefono solo puede contener números y el máximo son 10 dígitos.</p>
+				<p class="formulario__input-error">El telefono solo puede contener números y únicamente 10 dígitos.</p>
 			</div>
 
 			<div class="formulario__grupo">
