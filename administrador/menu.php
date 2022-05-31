@@ -108,7 +108,7 @@ if(isset($_SESSION['user'])){
 						<button class="buy-btn" onclick="usuario()">Ir a usuarios</button>
 						<script type="text/javascript">
 						function usuario(){
-							window.location.href="vistas/vista_usuario.php";
+							window.location.href="vistas/listar_usuarios.php";
 						}
 						</script>
 					</div>

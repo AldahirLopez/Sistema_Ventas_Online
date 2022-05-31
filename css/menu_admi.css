@@ -303,13 +303,14 @@
     color: white;
     font-size: 16px;
     border-radius: 20px;
+    border-style: none;
   }
 
   .encabezado{
     height: 10px;
   }
   
-  
+
   /* ----- -----  Mediaqueries ----- ----- */
   @media screen and (max-width: 800px) {
     .formulario {
