@@ -141,22 +141,6 @@
 			<input class="formulario__input" type="file" name="ruta_img" require="">
 			</div> 
 
-			<div class="formulario__grupo">
-			<label for="rol" class="formulario__label"><h4 style="color:#FF0000";>Selecione el Rol *</h4></label>
-			<select class="formulario__input" id="rolSelect" name="rolSelect">
-			<option value="0">Seleccionar...</option>
-			<option value="1">Usuario</option>
-			<option value="2">Administrador</option>
-			</select>
-			</div>
-    		<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
-			
-			</div>
-			<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
-			
-			</div>
 			<!-- Grupo: Terminos y Condiciones -->
 			<div class="formulario__grupo" id="grupo__terminos">
 				<label class="formulario__label">
@@ -169,18 +153,7 @@
 			<div class="formulario__mensaje" id="formulario__mensaje">
 				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>	
 			</div>
-			<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
 			
-			</div>
-			<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
-			
-			</div>
-			<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
-
-			</div>
 			<!-- Grupo: Registrar -->
 			<div class="formulario__grupo" id="grupo__terminos">
 			<center>
@@ -199,6 +172,7 @@
         <!--js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+	  <script src="../js/validad.js"></script>
  </body>
 </html> 
   
