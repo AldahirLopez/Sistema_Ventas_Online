@@ -27,10 +27,11 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         
     }else{
         //echo "No existe el usuario";
+        
+        include_once '../../vistas_user/vista_login.php';
         ?> 
     <h3 class="bad">¡EL usuario y/o contraseña no existe!</h3>
     <?php
-        include_once '../../vistas_user/vista_login.php';
     }
 }else{
     //echo "login";

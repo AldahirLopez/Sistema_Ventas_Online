@@ -36,7 +36,52 @@ session_start();
           <?php
           
           include ('registros/conexion.php');
-          $resultado=$conexion ->query("select * from items where cantidad >= 1 limit 0,20") or die($conexion -> error);
+          $resultado=$conexion ->query("select * from items where cantidad >= 1 limit 0,10") or die($conexion -> error);
+          while($fila = mysqli_fetch_array($resultado)){         
+          ?>
+            <li class="item-a">
+            <div class="product-box">
+            <a href="itemone.php?id=<?php echo $fila[0];?>"><!--**link**demo-->
+              <!--ID producto-->
+              <input type="hidden" id="id" value="<?php echo $fila['id'];?>">
+              <!--heading----->
+              <strong class="nom"><?php echo $fila["nombre"];?></strong>
+              <!--img--------->
+            <img class="img" src="data:image/jpg;base64, <?php echo  base64_encode($fila['img']); ?>"/>
+              <!--colors------>
+              <div class="avalible-colors">
+              
+              </div>
+              <!--buy & price-->
+              <div class="buy-price">
+                  <!--price-->
+                  <p> <i class="fas fa-money-bill"></i>$<?php echo $fila["precio"];?></p>
+                  <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+                </a>
+              </div>
+              </li> 
+              <?php
+                }
+              ?>    
+    </ul>      
+</div>
+</section>
+        <!--===Product-section=1(HTML)===================================================================-->
+        <section class="products-slider">
+        <!--heading-------------------------------->
+        <div class="slider-heading">
+            <h3> Agregado <span> Recientemente.</span></h3>
+        </div>
+        <!--product-container---------------------->
+        <div class="product-container">
+    <!--==slider-===============================----->
+    <ul class="autoWidth" class="cs-hidden">
+    <!--==card===========================-->   
+          <?php
+          
+          include ('registros/conexion.php');
+          $resultado=$conexion ->query("select * from items where cantidad >= 1 limit 10,20") or die($conexion -> error);
           while($fila = mysqli_fetch_array($resultado)){         
           ?>
             <li class="item-a">

@@ -49,7 +49,7 @@ if(isset($_GET['id'])){
         <strong class="nom"><?php echo $fila[1];?></strong>
         </center>
         <div class="detail-descriptiona"><?php echo $fila[4];?></div>
-        <div class="detail-descriptiona">Talla:<?php echo $fila[9];?></div>
+        <div class="detail-talla">Talla:<?php echo $fila[9];?></div>
         
               
         <!--buy & price--> 
@@ -62,7 +62,7 @@ if(isset($_GET['id'])){
           </p>
             <!--btn---->           
         </div> 
-
+<center>
         <button class="buy-btn" onclick="carrito()"><i class="fas fa-shopping-cart"></i></button>
             <script type="text/javascript">
               function carrito(){
@@ -70,6 +70,7 @@ if(isset($_GET['id'])){
                 window.location.href="anadir_carrito.php?id=<?php echo $fila[0];?>";
               }
         </script>
+        </center>
         </center>
         </div>    
        </center>

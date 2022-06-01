@@ -45,8 +45,7 @@
                   
         </div>
     </header>
-    <div class="titulo">RR Desing Mx</div>
-    <div class="titulo2">Bienvenido</div>
+    <div class="titulo"></div>
           <div class="conten">
           <button class="botons2" onclick="login()"><i class="fas fa-arrow-left"></i></button>
           <script type="text/javascript">
@@ -55,15 +54,13 @@
             }
           </script>
           </div>
-             <form action="#" method="post" class="form-register">
+             <form method="post" class="form-register">
                 <h4>Login</h4>
                 Username: <input class="controls" type="text" name="username"  placeholder="Usuario">
                 Password: <input class="controls" type="password" name="password" placeholder="Contraseña"> 
-                <input class="botons" type="submit"  value="Iniciar sesion">
+                <input class="sesion" type="submit"  value="Iniciar sesion">
                 <p><a href="../../vistas_user/vista_nuevo.php">NO TENGO CUENTA</a></p>
-            </form>  
-            <div class="logo"><img  src="../../img/logos/logo_gris.png"></div>
-          
+            </form>            
   </body>
 </html>
 

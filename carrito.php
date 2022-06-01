@@ -94,7 +94,6 @@
         ?>
         <script src="js/menu.js"> </script> 
         </header>
-            <div class="site-blocks-table">
             <table>
 
               <tr><th colspan="6"><h1>Carrito de compras</h1></th></tr>
@@ -147,13 +146,11 @@
               <div class="total">Total:<?php echo $total;?></div>
                 </td>
                 <td>
-                  <button class="pagar" onclick="window.location='session.php'">Pagar: <i class="fas fa-cash-register"></i></button>
+                  <button class="botons" onclick="window.location='session.php'">Pagar: <i class="fas fa-cash-register"></i></button>
                 </td>
               </tr>
               </table>
               
-
-            </div>
 
       <!--js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
