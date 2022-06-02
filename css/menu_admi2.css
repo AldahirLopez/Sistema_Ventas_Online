@@ -101,7 +101,7 @@ header{
     align-items: center;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-
+    border-style: none;
   }
 
    /* ----- -----  Mediaqueries ----- ----- */
