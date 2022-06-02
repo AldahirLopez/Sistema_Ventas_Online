@@ -114,9 +114,9 @@
             <input class='input-field' type="text" name="nombre" id="nombre" placeholder="" require ></input>
             Apellido:
             <input class='input-field' type="text" name="apellido" id="apellido" placeholder="" require></input>
-            Direccion:
+            Dirección:
             <input class='input-field' type="text" name="direccion" id="direccion" placeholder="" require></input>
-            CP:
+            C.P.:
             <input class='input-field' type="number"  name="cp" id="cp" min="1" max="999999999999"  placeholder="" require></input>
             <script>
                   var input=  document.getElementById('cp');
@@ -127,22 +127,22 @@
               </script>
             Referencias del domicilio:
             <input class='input-field' name="ref" id="ref" placeholder="" require ></input>
-            Telefono:
+            Teléfono:
             <input class='input-field' name="telefono" id="telefono" placeholder="" require ></input>
-            Correo Electronico:
+            Correo electrónico:
             <input class='input-field' name="correo" id="correo" placeholder="" require></input>
             <?php
             if($envio == true){
             ?>
                     <center>
-                    <h3 style=" font-size: 25px;" >Envio Gratis</h3>
+                    <h3 style=" font-size: 25px;" >Envío Gratis</h3>
                     </center>
             
             <?php
             }else{
             ?>
                     <select class="input-field" name="envio">
-                      <option style="background-color: black;" value="0">Selecciona un envio:</option>
+                      <option style="background-color: black;" value="0">Selecciona un envío:</option>
                       <option style="background-color: black;" value="50">Toluca y Metepec $50</option>
                       <option style="background-color: black;" value="125">Resto de la republica $125</option>
                     </select>
