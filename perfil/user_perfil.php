@@ -65,9 +65,9 @@
         <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
                     <li><i class="icono fas fa-map-signs"></i> Nombre: <?php echo $user->getNombre();  ?> <?php echo $user->getApe();  ?></li>
-                    <li><i class="icono fas fa-phone-alt"></i> Telefono: <?php echo $user->getTel();  ?></li>
-                    <li><i class="icono fas fa-briefcase"></i> Direccion: </li>
-                    <li><i class="icono fas fa-building"></i> Correo Electronico: <?php echo $user->getCorreo(); ?></li>
+                    <li><i class="icono fas fa-phone-alt"></i> Teléfono: <?php echo $user->getTel();  ?></li>
+                    <li><i class="icono fas fa-briefcase"></i> Dirección: </li>
+                    <li><i class="icono fas fa-building"></i> Correo electrónico: <?php echo $user->getCorreo(); ?></li>
                     <li><a href="../../pedidos.php"><i class="icono fas fa-truck" style="color:black"></i></a>Pedidos</li>
                     <li><a href="../sesion/logout.php"><i class="icono fas fa-sign-out-alt"></i></a>Salir</li>
                     
