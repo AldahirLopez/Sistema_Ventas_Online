@@ -33,9 +33,9 @@
 
 <th>ID</th>
 <th>Nombre</th>
-<th>Telefono</th>
+<th>Teléfono</th>
 <th>Correo</th>
-<th class="direc">Direccion</th>
+<th class="direc">Dirección</th>
 <th>Acción</th>
 
 </tr>

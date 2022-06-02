@@ -10,7 +10,7 @@ include("../../registros/conexion.php");
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="../../css/menu_admi.css">
-  <title>Formulario Registro</title>
+  <title>Formulario tallas</title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@ include("../../registros/conexion.php");
     </script>
     </div>
     <form method="post" class="form-register" enctype="multipart/form-data">
-    <h4>Formulario Registro</h4>    
+    <h4>Formulario tallas</h4>    
     <input class="controls" type="text" name="talla" id="talla" placeholder="Talla">
     <input class="botons" type="submit" name="Registrar" value="Registrar"> 
  </form>  

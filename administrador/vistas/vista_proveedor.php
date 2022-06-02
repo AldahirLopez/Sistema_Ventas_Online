@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="../../css/admin-header.css">
   <link rel="stylesheet" type="text/css" href="../../css/menu_admi.css">
-  <title>Formulario Registro</title>
+  <title>Formulario Proveedor</title>
 </head>
 <body>
     <div class="menu">
@@ -26,7 +26,7 @@
       }
 	</script>
 	<center>
-	<h4>Registro de Usuario</h4>
+	<h4>Registro de Proveedores</h4>
 	</center>
 	<h4 style="color:#FF0000";> *Campos Obligatorios</h4>
     <form method="post" class="formulario" id="formulario" enctype="multipart/form-data">
@@ -37,7 +37,7 @@
 					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
 			</div>
 
       <!-- Grupo: Apellidos -->
@@ -67,7 +67,7 @@
 					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+				<p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
 			</div>
 
 			<!-- Grupo: Teléfono -->
@@ -77,17 +77,17 @@
 					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				<p class="formulario__input-error">El teléfono solo puede contener números y son 10 dígitos.</p>
 			</div>
 
       <!-- Grupo: Teléfono -->
 			<div class="formulario__grupo" id="grupo__telefono">
-				<label for="telefono" class="formulario__label">Direccion</label>
+				<label for="telefono" class="formulario__label">Dirección</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Calle y Numero"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				<p class="formulario__input-error">Escriba su dirección, comenzando por la calle.</p>
 			</div>
 
       <!-- Grupo: Teléfono -->
@@ -97,7 +97,7 @@
 					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Calle y Numero"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				<p class="formulario__input-error">El código postal solo puede contener numeros y el máximo son 5 dígitos.</p>
 			</div>
 
       <!-- Grupo: Teléfono -->

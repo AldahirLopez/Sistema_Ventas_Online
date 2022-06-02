@@ -37,9 +37,9 @@
 
       <th>Pago</th>
       <th>Venta</th>
-      <th>Direccion</th>
+      <th>Dirección</th>
       <th>Productos</th>
-      <th>Estado del envio</th>
+      <th>Estado del envío</th>
       <th>Actualizar</th>
       </tr>
       
@@ -82,7 +82,7 @@
                       <tr>
                       <th>Pago</th>
                       <th>Venta</th>
-                      <th>Direccion</th>
+                      <th>Dirección</th>
                       <th>Fecha</th>
                       <th>Total</th>
                       </tr>
@@ -139,8 +139,8 @@
                       <th>Usuario</th>
                       <th>Fecha</th>
                       <th>Total</th>
-                      <th>Guia</th>
-                      <th>Paqueteria</th>
+                      <th>Guía</th>
+                      <th>Paquetería</th>
                       </tr>
                         <?php
                         $ventas=$conexion ->query("select * from venta where id_venta = $idventa") or die($conexion -> error);
@@ -198,14 +198,14 @@
                </script>
                   <div class="pagos">
                   <table>
-                  <tr><th colspan="7"><h1>Direccion de envio</h1></th></tr>
+                  <tr><th colspan="7"><h1>Dirección de envío</h1></th></tr>
                       <tr>
                       <th>Nombre</th>
                       <th>Apellidos</th>
-                      <th>Direccion</th>
-                      <th>CP</th>
+                      <th>Dirección</th>
+                      <th>C.P.</th>
                       <th>Referencias</th>
-                      <th>Telefono</th>
+                      <th>Teléfono</th>
                       <th>Correo</th>
                       </tr>
                         <?php

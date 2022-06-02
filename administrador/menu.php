@@ -43,7 +43,7 @@ if(isset($_SESSION['user'])){
 						</div>
 					</header>
 				<div class="user">
-					<h1>Menu</h1>
+					<h1>Menú</h1>
 				</div>
 				<div class="content">
 					<div class="conten-info">

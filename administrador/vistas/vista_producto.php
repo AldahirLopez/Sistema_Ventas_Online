@@ -13,7 +13,7 @@
   <link href="../../fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../../css/admin-header.css">
   <link rel="stylesheet" type="text/css" href="../../css/menu_admi.css">
-  <title>Formulario Registro</title>
+  <title>Formulario Producto</title>
 </head>
 <body>
 <div class="encabezado">
@@ -37,7 +37,7 @@
 					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Articulo ">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
 			</div>
 
 			<!-- Grupo: Cantidad -->
@@ -47,7 +47,7 @@
 					<input type="text" class="formulario__input" name="cantidad" id="cantidad" placeholder="123">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">La cantidad solo acepta numeros.</p>
+				<p class="formulario__input-error">La cantidad solo acepta números.</p>
 			</div>
 
       <!-- Grupo: Precio -->
@@ -57,17 +57,17 @@
 					<input type="text" class="formulario__input" name="precio" id="precio" placeholder="MXN-$12.23">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El precio solo contiene numeros y puntos.</p>
+				<p class="formulario__input-error">El precio solo contiene números y puntos.</p>
 			</div>
 
        <!-- Grupo: Descripcion -->
 			<div class="formulario__grupo" id="grupo__descripcion">
-				<label for="descripcion" class="formulario__label">Descripcion</label>
+				<label for="descripcion" class="formulario__label">Descripción</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="descripcion" id="descripcion" placeholder="Camisa color blanca, manga corta">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">Escriba una descripcion valida</p>
+				<p class="formulario__input-error">Escriba una descripción válida</p>
 			</div>
 
 	  <!-- Grupo: Talla -->
@@ -77,22 +77,22 @@
 					<input type="text" class="formulario__input" name="talla" id="talla" placeholder="Camisa color blanca, manga corta">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">Escriba una talla valida</p>
+				<p class="formulario__input-error">Escriba una talla válida</p>
 			</div>
 
 			<!-- Grupo: Categoria -->
 			<div class="formulario__grupo" id="grupo__categoria">
-				<label for="categoria" class="formulario__label">Categoria</label>
+				<label for="categoria" class="formulario__label">Categoría</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="categoria" id="categoria">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">La categoria solo acepta letras</p>
+				<p class="formulario__input-error">La categoría solo acepta letras</p>
 			</div>
 
 			<!-- Grupo: Sub Categoria -->
 			<div class="formulario__grupo" id="grupo__sub_cat">
-				<label for="sub_cat" class="formulario__label">Sub Categoria</label>
+				<label for="sub_cat" class="formulario__label">Sub Categoría</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="sub_cat" id="sub_cat">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -134,7 +134,7 @@
 			</center>
 			</div>
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
 			</div>
 			
 		</form>  

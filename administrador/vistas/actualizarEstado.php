@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="../../css/menu_admi.css">
-  <title>Formulario Registro</title>
+  <title>Ver pedidos</title>
 </head>
 <body>
 
@@ -25,11 +25,11 @@ if(isset($_GET['id'])){
     <h4>Formulario de actualizacion de la venta: </h4>
     <input class="controls" type="text" name="paqueteria" id="paqueteria" placeholder="Ingrese la paqueteria">
                 <input class="controls" type="text" name="guia" id="guia" placeholder="Ingrese la guia">
-                <h4>Selecione el estado del envio</h4>
+                <h4>Selecione el estado del envío</h4>
                 <select id="estado" name="estado" class="controls" >
-                  <option id="1" value="1">Pendiente de envio</option>
+                  <option id="1" value="1">Pendiente de envío</option>
                   <option id="2" value="2">Enviado</option>
-                  <option id="3" value="3">En transito</option>
+                  <option id="3" value="3">En tránsito</option>
                   <option id="4" value="4">Entregado</option>
                 </select>
                 <input class="botons" type="submit" name="Registrar" value="Registrar">
