@@ -8,7 +8,7 @@
     <html lang="en" dir="ltr">
       <head>
         <meta charset="utf-8">
-        <title>Ver Pedido</title>
+        <title> Reporte Ventas</title>
         <!-- mio -->
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <link href="fontawesome/css/all.css" rel="stylesheet">
@@ -47,13 +47,43 @@ form label{
     
    <form class="nav" method="POST" action="reporte_ventas.php" onSubmit="return validarForm(this)" style="text-align:center">
 
-    <input type="month" id="mes" name="mes">
+    <!--<input type="month" id="mes" name="mes">-->
     
     <input type="text" placeholder="Buscar venta" name="palabra" id="palabra">
  
     <input type="submit" value="Buscar" name="buscar">
+    
  
 </form>
+<?php
+                    //creamos tabla reporte
+                    ?>
+                    <div>
+                        <form action="verifi.php" target="_blank" method="POST">
+                            <div class="form-group row">
+                                <label for="mes" class="col-sm-2 col-form-label">SELECCIONA EL MES</label>
+                                <div class="col-sm-6">
+                                    <select class="custom-select" id="mes" name="mes" required>
+                                        <option value="" disabled selected>ELIGE UN MES..</option>
+                                        <option value="1">ENERO</option>
+                                        <option value="2">FEBRERO</option>
+                                        <option value="3">MARZO</option>
+                                        <option value="4">ABRIL</option>
+                                        <option value="5">MAYO</option>
+                                        <option value="6">JUNIO</option>
+                                        <option value="7">JULIO</option>
+                                        <option value="8">AGOSTO</option>
+                                        <option value="9">SEPTIEMBRE</option>
+                                        <option value="10">OCTUBRE</option>
+                                        <option value="11">NOVIEMBRE</option>
+                                        <option value="12">DICIEMBRE</option>
+                                    </select>
+                                    
+                                </div>
+                            <button type="submit" style="background-color: #0b2fa3; border-color: #0b2fa3; color:#ffffff">GENERAR PDF</button>
+                            </div>
+                        </form>
+                    </div>
 
 <script type="text/javascript">
     function validarForm(formulario) 
@@ -89,11 +119,11 @@ form label{
       
 
       </tr>
+
       <?php
       
     if($vari==1){
       $pal=$_POST['palabra'];
-      $mes=$_POST['mes'];
       $resultado=$conexion ->query("select vpro.id_venta, vpro.id_producto, vpro.cantidad, vpro.talla,vpro.precio, ven.total, ven.fecha , 
        ven.id_venta from venta_productos vpro INNER JOIN venta ven on (vpro.id_venta=ven.id_venta) where vpro.id_venta like '%$pal%'") or die($conexion -> error);
        while($mostrar=mysqli_fetch_array($resultado)){
