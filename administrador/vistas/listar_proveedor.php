@@ -18,7 +18,7 @@
             window.location.href="../menu.php";
           }
         </script>
-    <button class="botons3" onclick="producto()">Agregar Nuevo Producto</button>
+    <button class="botons3" onclick="producto()">Agregar Nuevo Proveedor</button>
         <script type="text/javascript">
           function producto(){
             window.location.href="vista_proveedor.php";

@@ -16,6 +16,7 @@ if(isset($_SESSION['user'])){
 			<link href="../fontawesome/css/all.css" rel="stylesheet">
 				<link rel="stylesheet" type="text/css" href="../css/menu_admi2.css">	
 				<link rel="stylesheet" type="text/css" href="../css/menu_admi.css">	
+				<link rel="stylesheet" href="../css/popuppedidos.css">  
 				<title>Administracion | Administrador </title>  
 				</head>
 				<body>
@@ -32,14 +33,61 @@ if(isset($_SESSION['user'])){
 						<div class="user">
 						<h2>Hola Administrador - <?php echo $user->getNombre();?></h2>
 						</div>
-						<div>
-						<button class="botons" onclick="perfil()">Perfil</button>
+						<div class="notificaciones">
+						<?php
+						include ('../registros/conexion.php');
+						$contador = 0;
+						$resultado=$conexion ->query("select * from items where cantidad <= 3") or die($conexion -> error);
+						while($fila = mysqli_fetch_array($resultado)){ 
+							$contador++;
+						}        
+						?>
+						<button id="btn-abrir-noti" class="btn-abrir-noti"><i class="fas fa-bell"></i><span><?php echo $contador ?></span></button>
+						<div class="overlay" id="overlay">
+							<div class="popup" id="popup">
+							<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+							<script type="text/javascript">
+							var btnAbrirPopup  = document.getElementById('btn-abrir-noti'),
+								overlay  = document.getElementById('overlay'),
+								popup  = document.getElementById('popup'),
+								btnCerrarPopup  = document.getElementById('btn-cerrar-popup');
+									console.log(btnAbrirPopup);
+							btnAbrirPopup .addEventListener('click', function(){
+								overlay .classList.add('active');
+								popup .classList.add('active');
+							});
+
+							btnCerrarPopup .addEventListener('click', function(e){
+								e.preventDefault();
+								overlay .classList.remove('active');
+								popup .classList.remove('active');
+							});
+						</script>
+						<?php
+						include ('../registros/conexion.php');
+						$resultado=$conexion ->query("select * from items where cantidad <= 3") or die($conexion -> error);
+						while($fila = mysqli_fetch_array($resultado)){         
+						?>
+						<div class="noti-text">	
+							<div class="img-product">
+							<img class="img" src="data:image/jpg;base64, <?php echo  base64_encode($fila['img']); ?>"/>
+							</div>
+							<div class="txt-info">
+							<strong class="nom"><?php echo $fila["nombre"];?></strong>
+							<div class="detail-descriptiona"><?php echo $fila["descripcion"];?></div>
+							</div>				
+						</div>
+						<?php
+						}
+						?>
+						</div>
+						</div>
+						<button class="noti" onclick="perfil()">Perfil</button>
 						<script type="text/javascript">
 						function perfil(){
-							window.location.href="../servicios/login/validad.php";
+							window.location.href="/ventas/servicios/login/validad.php";
 						}
 						</script>
-						</div>
 						</div>
 					</header>
 				<div class="user">

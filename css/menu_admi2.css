@@ -4,11 +4,32 @@ header{
 }
 
 .top{
+  padding-top: 20px;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
+.noti-text{
+  display: flex;
+  color: white;
+}
+
+.txt-info{
+  justify-content: center;
+  margin: auto;
+}
+
+.top img{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  object-position: center;
+  margin: 30px 60px;
+}
+
+
 
 .content{
     width: auto;
@@ -45,10 +66,6 @@ header{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .top div{
-    margin: 30px;
   }
 
   .contenedor{

@@ -21,5 +21,7 @@ if(isset($arregloNuevo)){
     //registro a eliminar es unico
     unset($_SESSION['carrito']);
 }
+header("Location: /ventas/carrito.php");
 echo "listo";
+
 ?>

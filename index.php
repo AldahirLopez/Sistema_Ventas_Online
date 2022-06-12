@@ -26,7 +26,7 @@ session_start();
     <section class="products-slider">
         <!--heading-------------------------------->
         <div class="slider-heading">
-            <h3> Agregado <span> Recientemente.</span></h3>
+            <h3 > Agregado <span style="color:white"> Recientemente.</span></h3>
         </div>
         <!--product-container---------------------->
         <div class="product-container">
@@ -71,7 +71,7 @@ session_start();
         <section class="products-slider">
         <!--heading-------------------------------->
         <div class="slider-heading">
-            <h3> Agregado <span> Recientemente.</span></h3>
+            <h3> Agregado <span style="color:white"> Recientemente.</span></h3>
         </div>
         <!--product-container---------------------->
         <div class="product-container">

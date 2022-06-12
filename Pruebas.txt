@@ -3,5 +3,5 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer TEST-
 {"id":1133936196,"nickname":"TEST7OKI3ORY","password":"qatest1395","site_status":"active","email":"test_user_19441664@testuser.com"}
 //Prueba
 {"id":1133931854,"nickname":"TESTVODYOBY1","password":"qatest6891","site_status":"active","email":"test_user_82264711@testuser.com"}
-
-Tarjeta de prueba 4075 5957 1648 3764
+ 
+Tarjeta de prueba 4075 5957 1648 3764 11/25 123 APRO
