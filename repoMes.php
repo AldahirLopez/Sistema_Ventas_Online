@@ -55,8 +55,8 @@ date_default_timezone_set("America/Mexico_City");
 // Obteniendo la fecha actual con hora, minutos y segundos en PHP
 $fechaActual = date('d-m-Y');
 $HoraActual = date('H:i:s');
-$total = 0;
 
+$total = 0; 
 
 
 $pdf = new FPDF($orientation = 'P', $unit = 'mm');
@@ -66,51 +66,49 @@ $textypos = 5;
 $pdf->setY(12);
 $pdf->setX(10);
 // Agregamos los datos de la empresa
-//$pdf->Image('', 10, 4, 40);
-$pdf->SetFont('Arial', 'B', 12);
-$pdf->setY(30);
-$pdf->setX(10);
-$pdf->Cell(5, $textypos, "DE:");
-$pdf->SetFont('Arial', '', 10);
+$pdf->Image('img/logos/logo_gris.png', 10, 6, 28);
+$pdf->SetFont('Arial', 'B', 15);
 $pdf->setY(35);
-$pdf->setX(10);
-$pdf->Cell(5, $textypos, "empresa");
+$pdf->setX(15);
+$pdf->Cell(5, $textypos, "RR Desing");
+
+$pdf->SetFont('Arial', 'B', 10);
 $pdf->setY(40);
-$pdf->setX(10);
-$pdf->Cell(5, $textypos, "direccion calle");
+$pdf->setX(15);
+$pdf->Cell(5, $textypos, "C. J. Ortiz de Domínguez 29, Pilares, Metepec.");
 $pdf->setY(45);
-$pdf->setX(10);
-$pdf->Cell(5, $textypos, "codigo postal");
+$pdf->setX(15);
+$pdf->Cell(5, $textypos, "52175l");
 $pdf->setY(50);
-$pdf->setX(10);
-$pdf->Cell(5, $textypos, "estado");
+$pdf->setX(15);
+$pdf->Cell(5, $textypos, "Estado de México");
 $pdf->setY(55);
-$pdf->setX(10);
-$pdf->Cell(5, $textypos, "num tel");
+$pdf->setX(15);
+$pdf->Cell(5, $textypos, "552-568-8988");
 $pdf->setY(60);
-$pdf->setX(10);
-$pdf->Cell(5, $textypos, "correo");
+$pdf->setX(15);
+$pdf->Cell(5, $textypos, "rrdesing@gmail.com");
 header('Content-Type: application/json');
 
 
 // Agregamos los datos del cliente
 $numF =
     $pdf->SetFont('Arial', 'B', 12);
-$pdf->setY(30);
-$pdf->setX(120);
+$pdf->setY(20);
+$pdf->setX(135);
 $pdf->Cell(5, $textypos, "REPORTE MENSUAL: $nombremes");
 $pdf->SetFont('Arial', '', 10);
-$pdf->setY(35);
-$pdf->setX(125);
+$pdf->setY(25);
+$pdf->setX(135);
 $pdf->Cell(5, $textypos, "FECHA:");
-$pdf->setY(35);
-$pdf->setX(140);
+$pdf->setY(25);
+$pdf->setX(150);
 $pdf->Cell(5, $textypos, $fechaActual);
-$pdf->setY(40);
-$pdf->setX(125);
+$pdf->setY(30);
+$pdf->setX(135);
 $pdf->Cell(5, $textypos, "HORA:");
-$pdf->setY(40);
-$pdf->setX(140);
+$pdf->setY(30);
+$pdf->setX(150);
 $pdf->Cell(5, $textypos, $HoraActual);
 $pdf->setY(60);
 $pdf->setX(155);
