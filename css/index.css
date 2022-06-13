@@ -17,6 +17,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
     line-height:34px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .slider-heading h3 span{
     color: #6e6e73;
@@ -71,6 +72,7 @@
     padding: 5px;
     width: calc(100% - 10px);
     height: 65px;
+    font-family: Arial, Helvetica, sans-serif;
     }
   .buy-price{
     padding-top: 5px;

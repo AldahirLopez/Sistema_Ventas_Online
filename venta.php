@@ -162,9 +162,9 @@
             <input class='input-field' type="text" name="nombre" id="nombre" placeholder="<?php echo $fila[1]?>" readonly></input>
             Apellido:
             <input class='input-field' type="text" name="apellido" id="apellido" placeholder="<?php echo $fila[2]?>" readonly></input>
-            Direccion:
+            dirección:
             <input class='input-field' type="text" name="direccion" id="direccion" placeholder="<?php echo $fila[3]?>" readonly></input>
-            CP:
+            C.P.:
             <input class='input-field' type="number"  name="cp" id="cp" min="1" max="999999999999"  placeholder="<?php echo $fila[4]?>" readonly></input>
             <script>
                   var input=  document.getElementById('cp');
@@ -175,9 +175,9 @@
               </script>
             Referencias del domicilio:
             <input class='input-field' name="ref" id="ref" placeholder="<?php echo $fila[5]?>" readonly></input>
-            Telefono:
+            Teléfono:
             <input class='input-field' name="telefono" id="telefono" placeholder="<?php echo $fila[6]?>" readonly></input>
-            Correo Electronico:
+            Correo electrónico:
             <input class='input-field' name="correo" id="correo" placeholder="<?php echo $fila[7]?>" readonly></input>
             <center>
             <center>

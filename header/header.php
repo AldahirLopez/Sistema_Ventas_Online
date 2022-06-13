@@ -1,9 +1,9 @@
-<div class="text">Menu</div>
+<div class="text">Menú</div>
       <div class="btn">
           <span class="fas fa-bars"></span>
           </div>
           <nav class="sidebar">
-            <div class="text">Menu</div>
+            <div class="text">Menú</div>
             <ul>
               <li class="active"><a href="index.php">Para Ti</a></li>
               <li>

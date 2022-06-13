@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header{
   width: auto;
@@ -11,6 +11,7 @@ header{
   display: flex;
   justify-content: flex-end;
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body{
   background-color: #ccc;
@@ -36,6 +37,7 @@ body{
   font-size: 28px;
   color: white;
   padding-left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .text2 a{
   text-decoration: none;
@@ -47,6 +49,7 @@ body{
   width: 150px;
   padding-top: 12px;
   font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 .text4{
@@ -69,7 +72,7 @@ body{
   color: white;
   border: 1px solid white;
   width: 400px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
  }
  .btn-main{
   padding: 10px;
@@ -78,7 +81,7 @@ body{
   border-style: none;
   border:1px solid white;
   cursor: pointer;
-  
+  font-family: Arial, Helvetica, sans-serif;
  }
  btn-search{
    width: 40px;
@@ -89,6 +92,7 @@ body{
   display: flex;
   font-size: 40px;
   padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .options-main a{
@@ -96,6 +100,7 @@ body{
 }
 .options-main a span{
   font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -146,6 +151,7 @@ body{
     text-align: center;
     background: #666666;
     letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   nav ul{
     background: #666666;
@@ -170,6 +176,7 @@ body{
     display: block;
     width: 100%;
     border-left: 3px solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
   }
   nav ul li.active a{
     color: #F27F81;
@@ -200,6 +207,7 @@ body{
     font-size: 17px;
     color: #e6e6e6;
     padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   nav ul li.active ul li a{
     color: #e6e6e6;
@@ -217,6 +225,7 @@ body{
     transform: translateY(-50%);
     font-size: 22px;
     transition: transform 0.4s;
+    font-family: Arial, Helvetica, sans-serif;
   }
   nav ul li a span.rotate{
     transform: translateY(-50%) rotate(-180deg);

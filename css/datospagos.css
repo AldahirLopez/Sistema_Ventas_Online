@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 body,html {
   margin:0;
-  font-family:lato;
+  font-family: Arial, Helvetica, sans-serif;
 }
 input[type=number]::-webkit-outer-spin-button,
 
@@ -27,6 +27,7 @@ h2 {
   font-weight:200;
   font-size:19px;
   font-size:1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 .container {

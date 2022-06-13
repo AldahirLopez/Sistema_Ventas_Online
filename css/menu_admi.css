@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
   body {
     background-size: cover cover;
@@ -72,6 +73,7 @@
     background: #1f53c5;
     color: white;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
     border-style: none;
   }
@@ -81,7 +83,7 @@
     padding: 30px;
     margin: auto;
     border-radius: 4px;
-    font-family: 'calibri';
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     box-shadow: 7px 13px 37px #000;
   }
@@ -89,6 +91,7 @@
   .form-register h4 {
     font-size: 22px;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .controls {
@@ -98,7 +101,7 @@
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #1f53c5;
-    font-family: 'calibri';
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: white;
     border-radius: 55px;
@@ -108,6 +111,7 @@
     height: 40px;
     text-align: center;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 40px;
   }
   
@@ -130,6 +134,7 @@
     margin: 16px 0;
     font-size: 16px;
     border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   
@@ -170,6 +175,7 @@
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .formulario__grupo-input {
@@ -203,6 +209,7 @@
     font-size: 12px;
     margin-bottom: 0;
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .formulario__input-error-activo {
@@ -216,6 +223,7 @@
     z-index: 100;
     font-size: 16px;
     opacity: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .formulario__checkbox {
@@ -262,6 +270,7 @@
     border-radius: 3px;
     cursor: pointer;
     transition: .1s ease all;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .formulario__btn:hover {
@@ -272,6 +281,7 @@
     font-size: 14px;
     color: #119200;
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .formulario__mensaje-exito-activo {
@@ -307,6 +317,7 @@
     font-size: 16px;
     border-radius: 20px;
     border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .btnregistrar{
@@ -318,6 +329,7 @@
     font-size: 16px;
     border-radius: 20px;
     border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .encabezado{
