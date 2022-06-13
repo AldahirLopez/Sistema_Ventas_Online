@@ -38,9 +38,9 @@
       <th>Talla</th>
       <th>Cantidad</th>
       <th>Sub_Total</th>
-      <th>Estado del envio</th>
-      <th>Paqueteria</th>
-      <th>Guia</th>
+      <th>Estado del envío</th>
+      <th>Paquetería</th>
+      <th>Guía</th>
       
 
       </tr>

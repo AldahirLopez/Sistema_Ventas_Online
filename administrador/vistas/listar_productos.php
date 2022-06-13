@@ -34,7 +34,7 @@
 <th>Producto</th>
 <th>Precio</th>
 <th>Stock</th>
-<th>Acción</th>
+<th>Acciones</th>
 
 </tr>
 

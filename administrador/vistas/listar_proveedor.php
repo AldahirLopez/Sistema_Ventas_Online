@@ -36,7 +36,7 @@
 <th>Teléfono</th>
 <th>Correo</th>
 <th class="direc">Dirección</th>
-<th>Acción</th>
+<th>Acciones</th>
 
 </tr>
 

@@ -142,9 +142,9 @@
             }else{
             ?>
                     <select class="input-field" name="envio">
-                      <option style="background-color: black;" value="0">Selecciona un envío:</option>
-                      <option style="background-color: black;" value="50">Toluca y Metepec $50</option>
-                      <option style="background-color: black;" value="125">Resto de la republica $125</option>
+                      <option  value="0">Selecciona un envío:</option>
+                      <option  value="50">Toluca y Metepec $50</option>
+                      <option  value="125">Resto de la republica $125</option>
                     </select>
             
             <?php
