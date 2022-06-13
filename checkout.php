@@ -114,8 +114,6 @@
             <input class='input-field' type="text" name="nombre" id="nombre" placeholder="" require ></input>
             Apellido:
             <input class='input-field' type="text" name="apellido" id="apellido" placeholder="" require></input>
-            Dirección:
-            <input class='input-field' type="text" name="direccion" id="direccion" placeholder="" require></input>
             C.P.:
             <input class='input-field' type="number"  name="cp" id="cp" min="1" max="999999999999"  placeholder="" require></input>
             <script>
@@ -125,10 +123,27 @@
                       this.value = this.value.slice(0,5); 
                   })
               </script>
+            Estado:
+            <input class='input-field' type="text" name="estado" id="estado" placeholder="" require></input>
+            Municipio:
+            <input class='input-field' type="text" name="municipio" id="municipio" placeholder="" require></input>
+            Calle/Dirección:
+            <input class='input-field' type="text" name="direccion" id="direccion" placeholder="" require></input>
+            Número exterior:
+            <input class='input-field' type="text" name="numext" id="numext" placeholder="" require></input>
+            Número exterior:
+            <input class='input-field' type="text" name="numint" id="numint" placeholder="" require></input>
             Referencias del domicilio:
             <input class='input-field' name="ref" id="ref" placeholder="" require ></input>
             Teléfono:
-            <input class='input-field' name="telefono" id="telefono" placeholder="" require ></input>
+            <input class='input-field' type="number" name="telefono" id="telefono" max="999999999999" placeholder="" require ></input>
+            <script>
+                  var input=  document.getElementById('telefono');
+                  input.addEventListener('input',function(){
+                    if (this.value.length > 10) 
+                      this.value = this.value.slice(0,10); 
+                  })
+              </script>
             Correo electrónico:
             <input class='input-field' name="correo" id="correo" placeholder="" require></input>
             <?php
