@@ -179,7 +179,7 @@
             <input class='input-field' type="text" name="direccion" id="direccion" placeholder="" require></input>
             Número exterior:
             <input class='input-field' type="text" name="numext" id="numext" placeholder="" require></input>
-            Número exterior:
+            Número interior:
             <input class='input-field' type="text" name="numint" id="numint" placeholder="" require></input>
             Referencias del domicilio:
             <input class='input-field' name="ref" id="ref" placeholder="" require ></input>
