@@ -28,7 +28,7 @@
     <table>
 
 
-<tr><th colspan="6"><h1>Listado de productos</h1></th></tr>
+<tr><th colspan="6"><h1>Listado de proveedores</h1></th></tr>
 <tr>
 
 <th>ID</th>
