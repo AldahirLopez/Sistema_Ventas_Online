@@ -39,10 +39,11 @@
 </tr>
 
 <?php
-
 $sql="select * from items";
+$sql2="select * from items";
 $resultado=mysqli_query($conexion,$sql);
-
+$total = mysqli_query($conexion,$sql2);
+$row=mysqli_num_rows($total);
 while($mostrar=mysqli_fetch_array($resultado))
 
 {
@@ -58,7 +59,6 @@ while($mostrar=mysqli_fetch_array($resultado))
     <button class="estado" title="Editar"><a href="actualizarProducto.php?id=<?php echo $mostrar['id'] ?>"><i class="far fa-edit"></i></button>
     <button class="estado" title="Borrar"><a href="../registros/eliminarProducto.php?id=<?php echo $mostrar['id'] ?>"><i class="fas fa-trash-alt"></i></button>
     </div></td>
-	
 </tr>
 
 <?php
@@ -66,6 +66,6 @@ while($mostrar=mysqli_fetch_array($resultado))
 ?>
 
 </table>
-
+<h1><?php echo $row ?> <h1>
 </body>
 </html>
