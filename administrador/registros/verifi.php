@@ -1,5 +1,5 @@
 <?php
-include 'registros/conexion.php';
+include '../../registros/conexion.php';
 $link=mysqli_connect('localhost','root','','sistema_online');
 
 $mes = $_POST['mes'];

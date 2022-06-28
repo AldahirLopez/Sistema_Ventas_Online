@@ -5,18 +5,22 @@
     $userSession = new UserSession();
     $user = new User();
           //registro de datos de la venta para el envio  
-          $conexion -> query("insert into direccion(nombre, apellidos, direccion, cp, referencias, telefono, correo) 
+          $conexion -> query("insert into direccion(nombre, apellidos, cp, estado, municipio, calle, numeroext, numeroint, referencias, telefono, correo) 
           values(
             '".$_POST['nombre']."',
             '".$_POST['apellido']."',
-            '".$_POST['direccion']."',
             '".$_POST['cp']."',
+            '".$_POST['estado']."',
+            '".$_POST['municipio']."',
+            '".$_POST['direccion']."',
+            '".$_POST['numext']."',
+            '".$_POST['numint']."',
             '".$_POST['ref']."',
             '".$_POST['telefono']."',
             '".$_POST['correo']."'
              )")or die($conexion -> error);
             $id_direc = $conexion -> insert_id;
-            $envio =  (int)trim($_POST['envio']);
+            $envio =  (int)trim($_POST['envio']); 
 ?>   
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -163,7 +167,7 @@
             Apellido:
             <input class='input-field' type="text" name="apellido" id="apellido" placeholder="<?php echo $fila[2]?>" readonly></input>
             C.P.:
-            <input class='input-field' type="number"  name="cp" id="cp" min="1" max="999999999999"  placeholder="<?php echo $fila[4]?>" readonly></input>
+            <input class='input-field' type="number"  name="cp" id="cp" min="1" max="999999999999"  placeholder="<?php echo $fila[3]?>" readonly></input>
             <script>
                   var input=  document.getElementById('cp');
                   input.addEventListener('input',function(){
@@ -172,19 +176,19 @@
                   })
               </script>
             Estado:
-            <input class='input-field' type="text" name="estado" id="estado" placeholder="" require></input>
+            <input class='input-field' type="text" name="estado" id="estado" placeholder="<?php echo $fila[4]?>" readonly></input>
             Municipio:
-            <input class='input-field' type="text" name="municipio" id="municipio" placeholder="" require></input>
+            <input class='input-field' type="text" name="municipio" id="municipio" placeholder="<?php echo $fila[5]?>" readonly></input>
             Calle/Dirección:
-            <input class='input-field' type="text" name="direccion" id="direccion" placeholder="" require></input>
+            <input class='input-field' type="text" name="direccion" id="direccion" placeholder="<?php echo $fila[6]?>" readonly></input>
             Número exterior:
-            <input class='input-field' type="text" name="numext" id="numext" placeholder="" require></input>
+            <input class='input-field' type="text" name="numext" id="numext" placeholder="<?php echo $fila[7]?>" readonly></input>
             Número interior:
-            <input class='input-field' type="text" name="numint" id="numint" placeholder="" require></input>
+            <input class='input-field' type="text" name="numint" id="numint" placeholder="<?php echo $fila[8]?>" readonly></input>
             Referencias del domicilio:
-            <input class='input-field' name="ref" id="ref" placeholder="" require ></input>
+            <input class='input-field' name="ref" id="ref" placeholder="<?php echo $fila[9]?>" readonly></input>
             Teléfono:
-            <input class='input-field' type="number" name="telefono" id="telefono" max="999999999999" placeholder="" require ></input>
+            <input class='input-field' type="number" name="telefono" id="telefono" max="999999999999" placeholder="<?php echo $fila[10]?>" readonly></input>
             <script>
                   var input=  document.getElementById('telefono');
                   input.addEventListener('input',function(){
@@ -193,7 +197,7 @@
                   })
               </script>
             Correo electrónico:
-            <input class='input-field' name="correo" id="correo" placeholder="<?php echo $fila[7]?>" readonly></input>
+            <input class='input-field' name="correo" id="correo" placeholder="<?php echo $fila[11]?>" readonly></input>
             <center>
             <center>
             <button id="btn-abrir-popup" class="btn-abrir-popup">Pagar</button>

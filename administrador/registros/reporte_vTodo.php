@@ -16,11 +16,11 @@
         <!-- Css -->
         <link rel="stylesheet" href="../../css/listar_pedidos.css">
         <link rel="stylesheet" href="../../css/listar_productos.css">
-        <link rel="stylesheet" href="../../css/admin-header.css">
+        <link rel="stylesheet" href="../../css/admin-header-reporte.css">
         <link rel="stylesheet" href="../../css/menu_admi.css">
         <style type="text/css">
         body {
-                 background-color: #696969;
+                 background-color: #80808024;
               }
         </style>
       </head>
@@ -35,6 +35,7 @@
             background-color: black;
             color: white;
             font-family: 'Roboto', sans-serif;
+            background-color: #80808024;
           }
       /* estilo etiqueta*/
       form label{
