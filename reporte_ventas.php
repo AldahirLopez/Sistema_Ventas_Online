@@ -14,11 +14,13 @@
         <link href="fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Css -->
-        <link rel="stylesheet" href="css/header.css">   
         <link rel="stylesheet" href="css/listar_pedidos.css">
+        <link rel="stylesheet" href="css/listar_productos.css">
+        <link rel="stylesheet" type="text/css" href="css/admin-header.css">
+        <link rel="stylesheet" href="css/menu_admi.css">
         <style type="text/css">
         body {
-    background-color: #696969;
+    background-color: #80808024;
 }
         </style>
       </head>
@@ -34,6 +36,7 @@
   background-color: black;
   color: white;
   font-family: 'Roboto', sans-serif;
+  background-color: #80808024;
 }
 /* estilo etiqueta*/
 form label{
@@ -42,12 +45,17 @@ form label{
 	display:inline-block;
 }
 			
-      </style>
-    <?php
-    include_once('header/header.php');
-    ?>
+    </style>
      <script src="js/menu.js"> </script> 
    </header>
+<div class="menu">
+<button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
+    <script type="text/javascript">
+      function login(){
+        window.location.href="administrador/menu.php";
+      }
+    </script>
+</div>
    <!--Buscador de ventas-->
     
    <form class="nav" method="POST" action="reporte_ventas.php" onSubmit="return validarForm(this)" style="text-align:center">
@@ -138,10 +146,10 @@ form label{
                 <td><?php echo $mostrar['fecha'] ?></td>
                 <td><?php echo $mostrar['id_producto'] ?></td>
                 <td><?php echo $mostrar['cantidad'] ?></td>
-               <td><?php echo $mostrar['talla'] ?></td>
-               <td><?php echo $mostrar['precio'] ?></td>
-               <td><?php echo $mostrar['total'] ?></td>
-              </tr>
+                <td><?php echo $mostrar['talla'] ?></td>
+                <td><?php echo $mostrar['precio'] ?></td>
+                <td><?php echo $mostrar['total'] ?></td>
+                </tr>
 
               <?php
               }
