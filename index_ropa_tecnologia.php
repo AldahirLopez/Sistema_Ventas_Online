@@ -6,7 +6,7 @@
     <!-- mio -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link href="fontawesome/css/all.css" rel="stylesheet">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css -->
     <link rel="stylesheet" href="css/header.css">   
     <link rel="stylesheet" href="css/index.css">   
@@ -23,7 +23,7 @@
         <section class="products-slider">
         <!--heading-------------------------------->
         <div class="slider-heading">
-            <h3> Agregado <span> Recientemente.</span></h3>
+            <h3 > Agregado <span style="color:white"> Recientemente.</span></h3>
         </div>
         <!--product-container---------------------->
         <div class="product-container">

@@ -1,6 +1,6 @@
 <?php
 //conexion 
-include 'registros/conexion.php';
+include("../../registros/conexion.php");
 $link=mysqli_connect('localhost','root','','sistema_online');
 ///variabñles
 
@@ -47,7 +47,7 @@ switch ($mes) {
 ?>
 
 <?php
-include "fpdf/fpdf.php";
+include "../../fpdf/fpdf.php";
 
 
 date_default_timezone_set("America/Mexico_City");

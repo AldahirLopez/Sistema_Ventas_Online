@@ -1,7 +1,7 @@
 <?php
-    include 'registros/conexion.php';
-    include_once 'servicios/sesion/user.php';
-    include_once 'servicios/sesion/user_session.php';
+    include("../../registros/conexion.php");
+    include_once '../../servicios/sesion/user.php';
+    include_once '../../servicios/sesion/user_session.php';
     
       ?>
       <!DOCTYPE html>
@@ -11,43 +11,49 @@
         <title> Reporte Ventas</title>
         <!-- mio -->
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <link href="fontawesome/css/all.css" rel="stylesheet">
+        <link href="../../fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Css -->
-        <link rel="stylesheet" href="css/header.css">   
-        <link rel="stylesheet" href="css/listar_pedidos.css">
+        <link rel="stylesheet" href="../../css/listar_pedidos.css">
+        <link rel="stylesheet" href="../../css/listar_productos.css">
+        <link rel="stylesheet" href="../../css/admin-header.css">
+        <link rel="stylesheet" href="../../css/menu_admi.css">
         <style type="text/css">
         body {
-    background-color: #696969;
-}
+                 background-color: #696969;
+              }
         </style>
       </head>
       <body>
     <header>
-
     <style type="text/css">
       form{
-  background-color: black;
-  border-style: 1;
-  border:0px solid white;
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-/* estilo etiqueta*/
-form label{
-	width:72px;
-	font-weight:bold;
-	display:inline-block;
-}
+            background-color: black;
+            border-style: 1;
+            border:0px solid white;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+          }
+      /* estilo etiqueta*/
+      form label{
+            width:72px;
+            font-weight:bold;
+            display:inline-block;
+      }
 			
       </style>
-    <?php
-    include_once('header/header.php');
-    ?>
      <script src="js/menu.js"> </script> 
    </header>
+   <div class="menu">
+<button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
+    <script type="text/javascript">
+      function login(){
+        window.location.href="../menu.php";
+      }
+    </script>
+</div>
    <!--Buscador de ventas-->
     
    <form class="nav" method="POST" action="reporte_ventas.php" onSubmit="return validarForm(this)" style="text-align:center">

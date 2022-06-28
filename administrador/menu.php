@@ -129,7 +129,7 @@ if(isset($_SESSION['user'])){
 						<button class="buy-btn" onclick="reventas()">Ir a reporte de ventas</button>
 						<script type="text/javascript">
 						function reventas(){
-							window.location.href="../reporte_ventas.php";
+							window.location.href="registros/reporte_ventas.php";
 						}
 						</script>
 
