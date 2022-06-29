@@ -132,11 +132,11 @@ form label{
       </tr>
 
       <?php
-      $fechaActual = date('d-m-Y');
+      $fechaActual = date('Y-m-d');
       
     if($vari==1){
       
-      $pal=$_POST['palabra'];
+      $pal='';
       $resultado=$conexion ->query("select vpro.id_venta, vpro.id_producto, vpro.cantidad, vpro.talla,vpro.precio, ven.total, ven.fecha , 
        ven.id_venta from venta_productos vpro INNER JOIN venta ven on (vpro.id_venta=ven.id_venta) where vpro.id_venta like '%$pal%'") or die($conexion -> error);
        while($mostrar=mysqli_fetch_array($resultado)){

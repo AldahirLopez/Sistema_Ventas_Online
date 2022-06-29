@@ -59,7 +59,7 @@
 			<div class="formulario__grupo" id="grupo__direccion">
 				<label for="direccion" class="formulario__label">Apellido Materno</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="John Doe"><h4 style="color:#FF0000";>*</h4>
+					<input type="text" class="formulario__input" name="apellidoM" id="apellidoM" placeholder="John Doe"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El nombre solo puede contener letras.</p>

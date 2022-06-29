@@ -66,7 +66,7 @@ $textypos = 5;
 $pdf->setY(12);
 $pdf->setX(10);
 // Agregamos los datos de la empresa
-$pdf->Image('img/logos/logo_gris.png', 10, 6, 28);
+$pdf->Image('../../img/logos/logo_gris.png', 10, 6, 28);
 $pdf->SetFont('Arial', 'B', 15);
 $pdf->setY(35);
 $pdf->setX(15);

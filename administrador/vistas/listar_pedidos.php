@@ -220,7 +220,14 @@
                             <?php echo $mostrardirec['apellidos'] ?>
                           </td>
                           <td>
-                            <?php echo $mostrardirec['direccion'] ?>
+                            
+                            <?php echo $mostrardirec['estado'] ?>
+                            <?php echo $mostrardirec['municipio'] ?>
+                            <?php echo $mostrardirec['calle'] ?>
+                            <?php echo $mostrardirec['numeroext'] ?>
+                            <?php echo $mostrardirec['numeroint'] ?>
+
+                          
                           </td>
                           <td>
                             <?php echo $mostrardirec['cp'] ?>

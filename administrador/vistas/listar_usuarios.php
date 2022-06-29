@@ -53,7 +53,10 @@ while($mostrar=mysqli_fetch_array($resultado))
 <tr>
 	<td><?php echo $mostrar['username'] ?></td>
 	<td><?php echo $mostrar['nombre'] ?></td>
-	<td><?php echo $mostrar['apellidos'] ?></td>
+	<td>
+    <?php echo $mostrar['apellidos'] ?>
+    <?php echo $mostrar['apellidoM'] ?>
+  </td>
 	<td><?php echo $mostrar['telefono'] ?></td>
   <td><?php echo $mostrar['correo_e'] ?></td>
   <td><?php echo $mostrar['rol'] ?></td>

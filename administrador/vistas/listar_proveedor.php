@@ -58,8 +58,7 @@ while($mostrar=mysqli_fetch_array($resultado))
   <td class="direc"><?php echo $mostrar['direccion'] ?></td>
   <td>
     <div class="options">
-    <button class="estado"><a href="actualizarProducto.php?id=<?php echo $mostrar['id_proveedor'] ?>"><i class="far fa-edit"></i></button>
-    <button class="estado"><a href="../registros/eliminarProducto.php?id=<?php echo $mostrar['id_proveedor'] ?>"><i class="fas fa-trash-alt"></i></button>
+    <button class="estado"><a href="../registros/eliminarProveedor.php?id=<?php echo $mostrar['id_proveedor'] ?>"><i class="fas fa-trash-alt"></i></button>
     </div></td>
 	
 </tr>

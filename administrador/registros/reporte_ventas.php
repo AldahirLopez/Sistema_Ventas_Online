@@ -58,7 +58,7 @@ form label{
 </div>
    <!--Buscador de ventas-->
     
-   <form class="nav" method="POST" action="reporte_ventas-busqueda.php" onSubmit="return validarForm(this)" style="text-align:center">
+   <form class="nav" method="POST" action="reporte_ventas.php" onSubmit="return validarForm(this)" style="text-align:center">
 
     <!--<input type="month" id="mes" name="mes">-->
     
@@ -132,9 +132,28 @@ form label{
       </tr>
 
       <?php
-      $fechaActual = date('d-m-Y');
+      $fechaActual = date('Y-m-d');
       
-     if($vari==0){
+    if($vari==1){
+      
+      $pal=$_POST['palabra'];
+      $resultado=$conexion ->query("select vpro.id_venta, vpro.id_producto, vpro.cantidad, vpro.talla,vpro.precio, ven.total, ven.fecha , 
+       ven.id_venta from venta_productos vpro INNER JOIN venta ven on (vpro.id_venta=ven.id_venta) where vpro.id_venta like '%$pal%'") or die($conexion -> error);
+       while($mostrar=mysqli_fetch_array($resultado)){
+                ?>
+                <tr>
+                <td><?php echo $mostrar['id_venta'] ?></td>
+                <td><?php echo $mostrar['fecha'] ?></td>
+                <td><?php echo $mostrar['id_producto'] ?></td>
+                <td><?php echo $mostrar['cantidad'] ?></td>
+                <td><?php echo $mostrar['talla'] ?></td>
+                <td><?php echo $mostrar['precio'] ?></td>
+                <td><?php echo $mostrar['total'] ?></td>
+                </tr>
+
+              <?php
+              }
+    }if($vari==0){
       $resultado=$conexion ->query("SELECT vpro.id_venta, vpro.id_producto, vpro.cantidad, vpro.talla,vpro.precio, ven.total, ven.fecha , 
       ven.id_venta from venta_productos vpro INNER JOIN venta ven on (vpro.id_venta=ven.id_venta) where ven.fecha like '%$fechaActual%'") or die($conexion -> error);
       while($mostrar=mysqli_fetch_array($resultado)){

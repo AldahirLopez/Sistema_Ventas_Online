@@ -11,12 +11,6 @@
 </head>
 <body>
     <div class="menu">
-    <button class="btn-registro-back" onclick="login()"><i class="fas fa-arrow-left"></i></button>
-    <script type="text/javascript">
-      function login(){
-        window.location.href="listar_proveedor.php";
-      }
-    </script>
     </div>
     <main>
 <button class="botons" onclick="login()"><i class="fas fa-arrow-left"></i></button>
@@ -34,7 +28,7 @@
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Nombres</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123"><h4 style="color:#FF0000";>*</h4>
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="john123"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
@@ -44,17 +38,17 @@
 			<div class="formulario__grupo" id="grupo__apellidos">
 				<label for="nombre" class="formulario__label">Apellidos Paterno</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="John Doe"><h4 style="color:#FF0000";>*</h4>
+					<input type="text" class="formulario__input" name="apellidop" id="apellidop" placeholder="John Doe"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El nombre solo puede contener letras.</p>
 			</div>
 
-       <!-- Grupo: Direccion Calle-->
+       <!-- Grupo: Apellidos Calle-->
 			<div class="formulario__grupo" id="grupo__direccion">
 				<label for="direccion" class="formulario__label">Apellido Materno</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="John Doe"><h4 style="color:#FF0000";>*</h4>
+					<input type="text" class="formulario__input" name="apellidom" id="apellidom" placeholder="John Doe"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El nombre solo puede contener letras.</p>
@@ -80,45 +74,16 @@
 				<p class="formulario__input-error">El teléfono solo puede contener números y son 10 dígitos.</p>
 			</div>
 
-      <!-- Grupo: Teléfono -->
+      <!-- Grupo: Direccion -->
 			<div class="formulario__grupo" id="grupo__telefono">
 				<label for="telefono" class="formulario__label">Dirección</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Calle y Numero"><h4 style="color:#FF0000";>*</h4>
+					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Calle y Numero"><h4 style="color:#FF0000";>*</h4>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">Escriba su dirección, comenzando por la calle.</p>
-			</div>
+			</div>      
 
-      <!-- Grupo: Teléfono -->
-			<div class="formulario__grupo" id="grupo__telefono">
-				<label for="telefono" class="formulario__label">Codigo Postal</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Calle y Numero"><h4 style="color:#FF0000";>*</h4>
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El código postal solo puede contener numeros y el máximo son 5 dígitos.</p>
-			</div>
-
-      <!-- Grupo: Teléfono -->
-			<div class="formulario__grupo" id="grupo__telefono">
-				<label for="telefono" class="formulario__label">Direccion</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Calle y Numero"><h4 style="color:#FF0000";>*</h4>
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-			</div>
-      
-
-    		<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
-			
-			</div>
-			<!-- Grupo: Registrar -->
-			<div class="formulario__grupo" id="grupo__terminos">
-			
-			</div>
 			<!-- Grupo: Terminos y Condiciones -->
 			<div class="formulario__grupo" id="grupo__terminos">
 				<label class="formulario__label">
@@ -156,7 +121,7 @@
 		</form>
 		
 		<?php
-			include("../registros/usuario.php");
+			include("../registros/proveedor.php");
 		?>  
 </main>
 </body>
